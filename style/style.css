@@ -1,0 +1,177 @@
+:root {
+    --main-bg-color: #ffff;
+    --second-bg-color: #dadada;
+    --main-text-color: #1f1f1f;
+    --main-font: Arial, Helvetica, sans-serif;
+    --main-fade-color: #c0c0c0;
+    --main-red-color: #ff4d4d;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#page {
+    background-color: var(--main-bg-color);
+}
+
+header {
+    position: fixed;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 75px;
+    top: 0;
+    z-index: 9;
+}
+
+#navigationBarList {
+    position: fixed;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 40%;
+}
+
+#navItem {
+    display: inline;
+    padding-left: 5%;
+    font-size: 17px;
+    font-family: var(--main-font);
+}
+
+#navLink{
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: 0.2s;
+}
+#navLink:hover {
+    color: var(--main-fade-color);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+#home {
+    height: 100vh; 
+    padding-top: 100px;
+    text-align: center;
+    color: var(--main-text-color);
+    font-size: 40px;
+    font-family: var(--main-font);
+    animation: fadeIn ease 2s;
+
+    /* The image used */
+    background-color: var(--second-bg-color);
+
+    /* Set a specific height */
+    min-height: 575px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#myWork {
+    background-color: var(--main-bg-color);
+    padding-top: 50px;
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-family: var(--main-font);
+    height: 100vh;
+}
+
+.row {
+    margin-left: 30%;
+    
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#aboutMe {
+    /* The image used */
+    background-color: var(--second-bg-color);
+
+    /* Set a specific height */
+    min-height: 575px;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.textBox {
+    margin: 0 auto;
+    width: 50%;
+    height: 75%;
+    background-color: var(--main-bg-color);
+    top: 0;
+    transform: translateY(15%);
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+footer {
+    width: 100%; 
+    background-color: var(--main-bg-color); 
+    color: var(--main-text-color);
+    text-align: right;
+    height: 75px;
+}
+
+hr {
+    background-color: var(--main-text-color);
+    width: 5%; 
+    height: 3px;
+    border: none;
+}
