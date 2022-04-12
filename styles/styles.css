@@ -18,19 +18,17 @@ footer {
 }
 
 .navbar-brand {
-	padding: 0 3em 0 0;
+	padding: 0 1em 0 0;
 	font-size: 1.5em;
 }
 
 .social {
 	color: white;
-	margin-left: .25em;
-	margin-top: .25em;
+	margin-top: .5em;
 	display: inline-block;
 }
 
 .social li {
-	padding: 0.25em;
 	list-style-type: none;
 	display: inline-block;
 }
@@ -39,4 +37,24 @@ footer {
 	padding-top: .8em;
 	color: #858585;
 	display: inline-block;
+}
+
+@media (max-width: 550px) {
+	#footer-name {
+		margin-right: -1em;
+	}
+	#copyright {
+		display: none;
+	}
+}
+@media (max-width: 390px) {
+	.social {
+		margin-right: -1.5em;
+	}
+	.navbar-brand {
+		margin-left: -3em;
+	}
+	#footer-name {
+		margin-left: -1.25em;
+	}
 }
