@@ -1,3 +1,6 @@
+:root {
+	--swap-grey: #252931;
+}
 
 header {
 	padding: 0.5em 4em;
@@ -33,10 +36,22 @@ footer {
 	display: inline-block;
 }
 
+.swap {
+	background: var(--swap-grey);
+}
+
+.rounded {
+	border-radius: 1em;
+}
+
 #copyright {
 	padding-top: .8em;
 	color: #858585;
 	display: inline-block;
+}
+
+#AboutTools {
+	text-align: center;
 }
 
 @media (max-width: 550px) {
