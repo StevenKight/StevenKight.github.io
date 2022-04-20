@@ -2,8 +2,22 @@
 	--swap-grey: #252931;
 }
 
-header {
-	padding: 1em 4em;
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+header, main {
+	padding: 1em 5em;
+}
+
+main {
+	background-image: radial-gradient(circle closest-corner at 70% 55%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .75), rgba(0, 0, 0, 1)) , 
+						url("../images/coding-backgorund.jpg.jpg");
+	background-position: center;
+	color: white;
+	height: calc(100vh - 94px);
+	padding-bottom: -16px;
 }
 
 footer {
@@ -25,7 +39,6 @@ footer {
 }
 
 .navbar-brand {
-	padding: 0 1em 0 0;
 	font-size: 1.5em;
 }
 
@@ -58,22 +71,12 @@ footer {
 	text-align: center;
 }
 
-@media (max-width: 550px) {
-	#footer-name {
-		margin-right: -1em;
-	}
-	#copyright {
-		display: none;
-	}
+#home {
+	padding-left: 1em;
 }
-@media (max-width: 390px) {
-	.social {
-		margin-right: -1.5em;
-	}
-	.navbar-brand {
-		margin-left: -3em;
-	}
-	#footer-name {
-		margin-left: -1.25em;
+
+@media (max-width: 550px) {
+	header, main {
+		padding: 1em 2em;
 	}
 }
