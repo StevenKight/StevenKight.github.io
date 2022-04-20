@@ -1,10 +1,13 @@
 :root {
-	--swap-grey: #252931;
+	--tranTime: 375ms;
 }
 
 body {
 	margin: 0;
 	overflow-x: hidden;
+	background-image: radial-gradient(circle closest-corner at 70% 55%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .75), rgba(0, 0, 0, 1)) , 
+						url("../images/coding-backgorund.jpg.jpg");
+	background-position: center;
 }
 
 header, main {
@@ -12,9 +15,6 @@ header, main {
 }
 
 main {
-	background-image: radial-gradient(circle closest-corner at 70% 55%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .75), rgba(0, 0, 0, 1)) , 
-						url("../images/coding-backgorund.jpg.jpg");
-	background-position: center;
 	color: white;
 	height: calc(100vh - 94px);
 	padding-bottom: -16px;
@@ -26,7 +26,17 @@ footer {
 }
 
 .bg-dark {
-	background-color: black !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+	-webkit-transition: background-color var(--tranTime) linear;
+    -ms-transition: background-color var(--tranTime) linear;
+    transition: background-color var(--tranTime) linear;
+}
+
+.bg-dark:hover {
+	background-color: rgba(0, 0, 0, 1) !important;
+	-webkit-transition: background-color var(--tranTime) linear;
+    -ms-transition: background-color var(--tranTime) linear;
+    transition: background-color var(--tranTime) linear;
 }
 
 .active {
