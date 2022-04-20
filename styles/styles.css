@@ -3,7 +3,7 @@
 }
 
 header {
-	padding: 0.5em 4em;
+	padding: 1em 4em;
 }
 
 footer {
@@ -11,13 +11,17 @@ footer {
 	justify-content: space-between;
 }
 
-#nav .active {
-    font-weight: bolder;
+.bg-dark {
+	background-color: black !important;
+}
+
+.active {
+    color: orange !important;
 }
 
 .nav-item {
 	padding: 0 0.5em;
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 .navbar-brand {
