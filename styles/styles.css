@@ -1,5 +1,6 @@
 :root {
-	--tranTime: 375ms;
+	--navTranTime: 375ms;
+	--tranTime: 500ms;
 }
 
 body {
@@ -27,9 +28,9 @@ footer {
 
 .bg-dark {
 	background-color: rgba(0, 0, 0, 0) !important;
-	-webkit-transition: background-color var(--tranTime) linear;
-    -ms-transition: background-color var(--tranTime) linear;
-    transition: background-color var(--tranTime) linear;
+	-webkit-transition: background-color var(--navTranTime) linear;
+    -ms-transition: background-color var(--navTranTime) linear;
+    transition: background-color var(--navTranTime) linear;
 }
 
 .bg-dark:hover {
