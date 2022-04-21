@@ -23,32 +23,37 @@ main {
 }
 
 a {
-	text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+	color: var(--orange);
+	text-decoration: underline 0.15em rgba(0, 0, 0, 0);
 	text-underline-offset: 0.4em;
 	transition: text-decoration-color var(--tranTime);
 }
   
 a:hover {
+	color: var(--orange);
 	text-decoration-color: rgba(255, 166, 0, 1);
  	text-underline-offset: 0.4em;
 }
 
-.heading h2 {
-	margin-top: 2em;
-	font-weight: normal;
+#logos a {
+	text-decoration: none;
 }
 
-.heading h1 {
+.main {
+	margin-top: 3em;
+}
+
+.main h1 {
 	margin: 0.5em 0;
 	font-size: 4em;
 }
 
-.heading h5 {
+.main h5 {
 	color: rgb(209, 209, 209);
 	padding-bottom: 1em;
 }
 
-.heading h5 a {
+.main h5 a {
 	color: var(--orange);
 }
 
@@ -93,6 +98,10 @@ a:hover {
 	justify-content: space-between;
 }
 
+.material-tooltip-main {
+	margin-top: 0.5em;
+}
+
 .rounded {
 	border-radius: 1em;
 }
@@ -106,7 +115,13 @@ a:hover {
 }
 
 #learnMore {
-	padding-top: 1em;
+	margin-top: 3em;
+}
+
+#tools {
+	margin-top: 5em;
+	float: right; 
+	text-align: center;
 }
 
 @media (max-width: 550px) {
