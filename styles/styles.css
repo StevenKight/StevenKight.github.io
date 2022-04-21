@@ -31,6 +31,9 @@ a:hover {
 	text-decoration-color: rgba(255, 166, 0, 1);
  	text-underline-offset: 0.4em;
 }
+#hidden {
+	display: none;
+}
 
 /* Nav bar */
 .bg-dark {
@@ -84,7 +87,7 @@ main h5 {
 	padding-bottom: .75em;
 }
 #learnMore {
-	margin-top: 3em;
+	margin-top: 1em;
 }
 
 /* About Page */
@@ -123,8 +126,24 @@ main .section {
 		padding: 1em 2em;
 	}
 
+	/* Index Page */
+	main h1 {
+		margin-bottom: .25em;
+	}
+	main h5:not(:last-child) {
+		margin-bottom: 0;
+		padding-bottom: .5em;
+	}
+
 	/* Work Page */
 	#heading {
-		height: 90vh;
+		height: 100vh;
+		margin: 0.5em 0;
+	}
+	#heading h1 #hide {
+		display: none;
+	}
+	#hidden {
+		display: inline;
 	}
 }
