@@ -1,6 +1,7 @@
 :root {
 	--navTranTime: 375ms;
 	--tranTime: 500ms;
+	--orange: rgb(255, 166, 0);
 }
 
 body {
@@ -21,9 +22,34 @@ main {
 	padding-bottom: -16px;
 }
 
-footer {
-	display: flex;
-	justify-content: space-between;
+a {
+	text-decoration: underline 0.15em rgba(0, 0, 0, 1);
+	text-underline-offset: 0.4em;
+	transition: text-decoration-color var(--tranTime);
+}
+  
+a:hover {
+	text-decoration-color: rgba(255, 166, 0, 1);
+ 	text-underline-offset: 0.4em;
+}
+
+.heading h2 {
+	margin-top: 2em;
+	font-weight: normal;
+}
+
+.heading h1 {
+	margin: 0.5em 0;
+	font-size: 4em;
+}
+
+.heading h5 {
+	color: rgb(209, 209, 209);
+	padding-bottom: 1em;
+}
+
+.heading h5 a {
+	color: var(--orange);
 }
 
 .bg-dark {
@@ -41,7 +67,7 @@ footer {
 }
 
 .active {
-    color: orange !important;
+    color: var(--orange) !important;
 }
 
 .nav-item {
@@ -54,8 +80,7 @@ footer {
 }
 
 .social {
-	color: white;
-	margin-top: .5em;
+	margin-top: 1em;
 	display: inline-block;
 }
 
@@ -64,26 +89,24 @@ footer {
 	display: inline-block;
 }
 
-.swap {
-	background: var(--swap-grey);
+.collapse {
+	justify-content: space-between;
 }
 
 .rounded {
 	border-radius: 1em;
 }
 
-#copyright {
-	padding-top: .8em;
-	color: #858585;
-	display: inline-block;
-}
-
-#AboutTools {
-	text-align: center;
+#github {
+	padding-right: .75em;
 }
 
 #home {
 	padding-left: 1em;
+}
+
+#learnMore {
+	padding-top: 1em;
 }
 
 @media (max-width: 550px) {
