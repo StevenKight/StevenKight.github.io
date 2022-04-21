@@ -104,10 +104,10 @@ main h5 {
 }
 
 /* Work Page */
-main section {
+main .section {
 	height: 75vh;
 }
-main section:not(:first-child) {
+main .section:not(:first-child) {
 	background-color: black;
 	width: 100vw;
 }
