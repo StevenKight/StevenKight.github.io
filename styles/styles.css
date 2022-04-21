@@ -104,10 +104,11 @@ main h5 {
 }
 
 /* Work Page */
-main .section {
+#heading {
 	height: 75vh;
 }
-main .section:not(:first-child) {
+main .section {
+	height: 75vh;
 	background-color: black;
 	margin-left: 0em;
 	width: 100vw;
@@ -116,14 +117,14 @@ main .section:not(:first-child) {
 	padding-top: 1em;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 525px) {
 	/* Same on all pages */
 	header, main {
 		padding: 1em 2em;
 	}
 
 	/* Work Page */
-	main .section:first-child {
-		margin-bottom: 8em;
+	#heading {
+		height: 90vh;
 	}
 }
