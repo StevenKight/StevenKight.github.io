@@ -109,6 +109,7 @@ main .section {
 }
 main .section:not(:first-child) {
 	background-color: black;
+	margin-left: 0em;
 	width: 100vw;
 }
 .workLearnMore {
@@ -116,7 +117,13 @@ main .section:not(:first-child) {
 }
 
 @media (max-width: 550px) {
+	/* Same on all pages */
 	header, main {
 		padding: 1em 2em;
+	}
+
+	/* Work Page */
+	main .section:first-child {
+		margin-bottom: 8em;
 	}
 }
