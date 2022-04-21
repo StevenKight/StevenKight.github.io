@@ -78,6 +78,7 @@ a:hover {
 
 .navbar-brand {
 	font-size: 1.5em;
+	padding-right: 1em;
 }
 
 .social {
@@ -104,10 +105,6 @@ a:hover {
 
 #github {
 	padding-right: .75em;
-}
-
-#home {
-	padding-left: 1em;
 }
 
 #learnMore {
