@@ -31,7 +31,7 @@ a:hover {
 	text-decoration-color: rgba(255, 166, 0, 1);
  	text-underline-offset: 0.4em;
 }
-#hidden {
+.hidden {
 	display: none;
 }
 
@@ -125,6 +125,12 @@ main .section {
 	header, main {
 		padding: 1em 2em;
 	}
+	.hide {
+		display: none;
+	}
+	.hidden {
+		display: inline;
+	}
 
 	/* Index Page */
 	main h1 {
@@ -139,11 +145,5 @@ main .section {
 	#heading {
 		height: 100vh;
 		margin: 0.5em 0;
-	}
-	#heading h1 #hide {
-		display: none;
-	}
-	#hidden {
-		display: inline;
 	}
 }
