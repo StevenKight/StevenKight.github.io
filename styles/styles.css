@@ -50,11 +50,7 @@ a:hover {
 
 .main h5 {
 	color: rgb(209, 209, 209);
-	padding-bottom: 1em;
-}
-
-.main h5 a {
-	color: var(--orange);
+	padding-bottom: .75em;
 }
 
 .bg-dark {
