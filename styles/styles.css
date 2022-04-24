@@ -135,11 +135,10 @@ main .section {
 	/* Index Page */
 	main h1 {
 		margin-bottom: 0em;
-		padding-bottom: .25em;
-	}
-	main h5 {
-		margin-bottom: 0em;
 		padding-bottom: 0em;
+	}
+	main h5:last-child {
+		padding-bottom: 5em;
 	}
 
 	/* Work Page */
