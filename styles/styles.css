@@ -134,10 +134,10 @@ main .section {
 
 	/* Index Page */
 	main h1 {
-		margin-bottom: .25em;
+		margin-bottom: 0em;
 	}
 	main h5 {
-		padding-bottom: .25em;
+		padding-bottom: 0em;
 	}
 
 	/* Work Page */
