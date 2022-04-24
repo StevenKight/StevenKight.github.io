@@ -136,6 +136,9 @@ main .section {
 	main h1 {
 		margin-bottom: .25em;
 	}
+	main h5 {
+		padding-bottom: .25em;
+	}
 
 	/* Work Page */
 	#heading {
