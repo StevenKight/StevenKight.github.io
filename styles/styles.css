@@ -23,6 +23,9 @@ main {
 .hidden {
 	display: none;
 }
+.black {
+	filter: brightness(0) invert(1);
+}
 
 /* Link underline animation */
 main a {
@@ -128,6 +131,9 @@ main .section {
 }
 .workLearnMore {
 	padding-top: 1em;
+}
+main .section img {
+	padding-right: .5em;
 }
 
 @media (max-width: 525px) {
