@@ -27,14 +27,19 @@ main {
 /* Link underline animation */
 main a {
 	color: var(--orange);
-	text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+	text-decoration: underline;
+ 	text-decoration-color: transparent;
 	text-underline-offset: 0.4em;
-	transition: all var(--tranTime) ease-out;
+	transition: var(--tranTime) ease-in-out;
 }
 main a:hover {
 	color: var(--orange);
-	text-decoration: underline 0.15em rgba(255, 166, 0, 1);
+	text-decoration: underline;
 	text-underline-offset: 0.4em;
+
+	text-decoration-color: rgba(255, 166, 0, 1);
+	-webkit-text-decoration-color: rgba(255, 166, 0, 1);
+	-moz-text-decoration-color: rgba(255, 166, 0, 1);
 }
 
 /* Nav bar */
@@ -137,6 +142,11 @@ main .section {
 		display: inline;
 	}
 	a {
+		color: var(--orange);
+		text-decoration: underline 0.1em rgba(255, 166, 0, 1);
+		text-underline-offset: 0.4em;
+	}
+	a:hover {
 		color: var(--orange);
 		text-decoration: underline 0.1em rgba(255, 166, 0, 1);
 		text-underline-offset: 0.4em;
