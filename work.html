@@ -15,98 +15,73 @@
 		<!-- End Bootstrap CDN -->
 		<!-- Import Styles -->
 		<link rel="stylesheet" href="styles/styles.css">
+		<!-- Import Vue.js -->
+		<script src="https://unpkg.com/vue@next"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="./scripts/main.js" defer></script>
 			
 	</head>
 	<body class="box">
-		<header class="bg-dark row header">
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<a class="navbar-brand disabled" href="#">Steven Kight</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item me-4">
-							<a class="nav-link" href="./">Home</a>
-						</li>
-						<li class="nav-item me-4">
-							<a class="nav-link" href="./about">About</a>
-						</li>
-						<li class="nav-item me-4">
-							<a class="nav-link active disabled" href="./work">Work</a>
-						</li>
-						<li class="nav-item me-4">
-							<a class="nav-link" href="./contact">Contact</a>
-						</li>
-					</ul>
-					<div class="social pe-5">
-						<ul>
-							<li class="pe-3">
-								<a href="mailto:sgk0711@gmail.com" target="blank">
-									<img src="./images/social-icons/envelope.svg" 
-									width="30" alt="email icon"></a>
-							</li>
-							<li id="github">
-								<a href="#" target="blank">
-									<img src="./images/social-icons/github.svg" 
-									width="30" alt="github icon"></a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/steven-kight-742729177/" target="blank">
-									<img src="./images/social-icons/linkedin.svg" 
-									width="30" alt="linkedin icon"></a>
-							</li>
-						</ul>
-					</div>
+		<div id="app">
+			<header-component work></header-component>
+			<main>
+				<div id="heading">
+					<h1>
+						From <span class="hide">Artificial Intellegence</span> <span class="hidden">AI</span> <br> 
+						systems to small <br> graphic design work.
+					</h1>
+					<h5>Sorted from most recent to oldest below.</h5>
 				</div>
-			</nav>
-		</header>
-		<main>
-			<div id="heading">
-				<h1>
-					From <span class="hide">Artificial Intellegence</span> <span class="hidden">AI</span> <br> 
-					systems to small <br> graphic design work.
-				</h1>
-				<h5>Sorted from most recent to oldest below.</h5>
-			</div>
-			<div class="section" id="AI">
-				<h3>
-					<img src="./images/work-icons/artificial-intelligence.svg" class="black" width="100" alt="AI Icon">
-					Artificial Intellegence
-				</h3>
-				<h5 class="workLearnMore"><a href="./ai">Learn More &#62;</a></h5>
-			</div>
-			<div class="section" id="Web">
-				<h3>
-					<img src="./images/work-icons/web-development.svg" class="black" width="100" alt="Web development Icon">
-					Web development
-				</h3>
-				<h5 class="workLearnMore"><a href="./websites">Learn More &#62;</a></h5>
-			</div>
-			<div class="section" id="Database">
-				<h3> 
-					<img src="./images/work-icons/database.svg" class="black" width="100" alt="Database Icon"> 
-					Database
-				</h3>
-				<h5 class="workLearnMore"><a href="./database">Learn More &#62;</a></h5>
-			</div>
-			<div class="section" id="Graphics">
-				<h3>
-					<img src="./images/work-icons/graphic-design.svg" class="black" width="100" alt="Graphic Design Icon">
-					Graphic Design
-				</h3>
-				<h5 class="workLearnMore"><a href="">Learn More &#62;</a></h5>
-			</div>
-			<div class="section" id="Engineering">
-				<h3>
-					<img src="./images/work-icons/engineering.svg" class="black" width="100" alt="Engineering Icon">
-					Engineering
-				</h3>
-				<h5 class="workLearnMore"><a href="">Learn More &#62;</a></h5>
-			</div>
-		</main>
+				<div class="section" id="AI">
+					<h3>
+						<img src="./images/work-icons/artificial-intelligence.svg" class="black" width="100" alt="AI Icon">
+						Artificial Intellegence
+					</h3>
+					<h5 class="workLearnMore"><a href="./ai.html">Learn More &#62;</a></h5>
+				</div>
+				<div class="section" id="Web">
+					<h3>
+						<img src="./images/work-icons/web-development.svg" class="black" width="100" alt="Web development Icon">
+						Web development
+					</h3>
+					<h5 class="workLearnMore"><a href="./websites.html">Learn More &#62;</a></h5>
+				</div>
+				<div class="section" id="Database">
+					<h3> 
+						<img src="./images/work-icons/database.svg" class="black" width="100" alt="Database Icon"> 
+						Database
+					</h3>
+					<h5 class="workLearnMore"><a href="./database.html">Learn More &#62;</a></h5>
+				</div>
+				<div class="section" id="Graphics">
+					<h3>
+						<img src="./images/work-icons/graphic-design.svg" class="black" width="100" alt="Graphic Design Icon">
+						Graphic Design
+					</h3>
+					<h5 class="workLearnMore"><a href="">Learn More &#62;</a></h5>
+				</div>
+				<div class="section" id="Engineering">
+					<h3>
+						<img src="./images/work-icons/engineering.svg" class="black" width="100" alt="Engineering Icon">
+						Engineering
+					</h3>
+					<h5 class="workLearnMore"><a href="">Learn More &#62;</a></h5>
+				</div>
+			</main>
+		</div>
+
+		<!-- Import app -->
+		<script src="scripts/main.js"></script>
+
+		<!-- Import the component files -->
+		<script src="./components/header.js"></script>
+		<script src="./components/nav.js"></script>
+
+		<!-- Mount App -->
+		<script>
+			const mountedApp = app.mount("#app");
+		</script>
+
 	</body>
 </html>

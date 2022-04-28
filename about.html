@@ -15,119 +15,50 @@
 		<!-- End Bootstrap CDN -->
 		<!-- Import Styles -->
 		<link rel="stylesheet" href="styles/styles.css">
+		<!-- Import Vue.js -->
+		<script src="https://unpkg.com/vue@next"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="./scripts/main.js" defer></script>
 			
 	</head>
 	<body class="box">
-		<header class="bg-dark row header">
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<a class="navbar-brand disabled" href="#">Steven Kight</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item me-4">
-							<a class="nav-link" href="./">Home</a>
-						</li>
-						<li class="nav-item me-4">
-							<a class="nav-link active disabled" href="./about">About</a>
-						</li>
-						<li class="nav-item me-4">
-							<a class="nav-link" href="./work">Work</a>
-						</li>
-						<li class="nav-item me-4">
-							<a class="nav-link" href="./contact">Contact</a>
-						</li>
-					</ul>
-					<div class="social pe-5">
-						<ul>
-							<li class="pe-3">
-								<a href="mailto:sgk0711@gmail.com" target="blank">
-									<img src="./images/social-icons/envelope.svg" 
-									width="30" alt="email icon"></a>
-							</li>
-							<li id="github">
-								<a href="#" target="blank">
-									<img src="./images/social-icons/github.svg" 
-									width="30" alt="github icon"></a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/steven-kight-742729177/" target="blank">
-									<img src="./images/social-icons/linkedin.svg" 
-									width="30" alt="linkedin icon"></a>
-							</li>
-						</ul>
-					</div>
+		<div id="app">
+			<header-component about></header-component>
+			<main>
+				<div style="float: left;">
+					<h2 style="margin-bottom: 1em;">About Me</h2>
+					<p>
+						Hello there! I'm Steven Kight. <br>
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+						<br>
+						Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+						Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur. <br>
+						<br>
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa <br> qui officia deserunt mollit anim id est laborum. <br>
+						<br>
+						Interested? <a href="./contact.html">Get in touch</a>.<br>
+						<br>
+						Want to see more? <a href="./work.html">Check out some of my work</a>.
+					</p>
 				</div>
-			</nav>
-		</header>
-		<main>
-			<div style="float: left;">
-				<h2 style="margin-bottom: 1em;">About Me</h2>
-				<p>
-					Hello there! I'm Steven Kight. <br>
-					<br>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-					<br>
-					Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-					Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur. <br>
-					<br>
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa <br> qui officia deserunt mollit anim id est laborum. <br>
-					<br>
-					Interested? <a href="./contact">Get in touch</a>.<br>
-					<br>
-					Want to see more? <a href="./work">Check out some of my work</a>.
-				</p>
-			</div>
-			<div id="tools">
-				<h4 style="margin-bottom: 1em;">Tools I Love Using</h2>
-				<div id="logos">
-					<div style="margin-bottom: 2em;">
-						<a href="https://www.python.org/" target="blank">
-							<img class="img-fluid" src="./images/logos/python.png" alt="Python logo" 
-								width="60" style="margin-right: 20px">
-						</a>
-						<a href="https://scikit-learn.org/stable/" target="blank">
-							<img class="img-fluid rounded" src="./images/logos/scikitlearn.png" alt="Scikitlearn logo" 
-								width="70" style="margin-right: 20px">
-						</a>
-						<a href="https://www.tensorflow.org/" target="blank">
-							<img class="img-fluid" src="./images/logos/tensorflow.png" alt="Tensorflow logo" 
-								width="60" style="margin-right: 20px">
-						</a>
-						<a href="https://keras.io/" target="blank">
-							<img class="img-fluid" src="./images/logos/keras.png" alt="Keras logo" 
-								width="60" style="margin-right: 20px">
-						</a>
-						<img class="img-fluid" src="./images/logos/web.png" alt="HTML CSS and JavaScript logos" 
-							width="140" style="margin-right: 20px">
-					</div>
-					<div style="padding-bottom: 2em;">
-						<a href="https://pandas.pydata.org/" target="blank">
-							<img class="img-fluid rounded" src="./images/logos/pandas.png" alt="Pandas logo" 
-								width="60" style="margin-right: 20px">
-						</a>
-						<a href="https://matplotlib.org/" target="blank">
-							<img class="img-fluid" src="./images/logos/matplotlib.svg" alt="Matplotlib logo" 
-								width="140" style="margin-right: 20px">
-						</a>
-						<img class="img-fluid" src="./images/logos/sql.png" alt="SQL logo" 
-							width="70" style="margin-right: 20px">
-						<a href="https://www.mysql.com/" target="blank">
-							<img class="img-fluid" src="./images/logos/mysql.svg" alt="MySQL logo" 
-								width="160" style="margin-right: 20px">
-						</a>
-						<a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="blank">
-							<img class="img-fluid" src="./images/logos/excel.png" alt="Excel logo" 
-								width="60" style="margin-right: 20px">
-						</a>
-					</div>
-				</div>
-			</div>
+				<aside-component :classes="classes" tool></aside-component>
+			</main>
 		</div>
-		</main>
+
+		<!-- Import app -->
+		<script src="scripts/main.js"></script>
+
+		<!-- Import the component files -->
+		<script src="./components/header.js"></script>
+		<script src="./components/nav.js"></script>
+		<script src="./components/aside.js"></script>
+
+		<!-- Mount App -->
+		<script>
+			const mountedApp = app.mount("#app");
+		</script>
+
 	</body>
 </html>
