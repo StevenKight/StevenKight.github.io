@@ -13,7 +13,10 @@ app.component('aside-component', {
     `
     <aside>
         <div id="classes" style="text-align: center;">
-            <h5 v-for="item in classes">{{ item.name }} taught by {{ item.instructer }}</h5>
+            <h4 style="margin-bottom: 1em;">Fall 2022 Class Schedule:</h4>
+            <h5 v-for="item in classes">
+                {{ item.name }} taught by {{ item.instructer }} at {{ item.time }} on {{ item.days }}
+            </h5>
         </div>
         <div id="tools" :style= "[tool ? { 'visibility': 'visible' } : { 'visibility': 'hidden' }]"> 
             <h3 style="margin-bottom: 1em;">Tools I Love Using</h3>
