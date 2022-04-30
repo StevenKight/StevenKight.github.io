@@ -30,13 +30,13 @@ app.component('navigation', {
                     <a class="nav-link" :class="{ active: home }" href="./">Home</a>
                 </li>
                 <li class="nav-item me-4">
-                    <a class="nav-link" :class="{ active: about }" href="./about">About</a>
+                    <a class="nav-link" :class="{ active: about }" href="./about.html">About</a>
                 </li>
                 <li class="nav-item me-4">
-                    <a class="nav-link" :class="{ active: work }" href="./work">Work</a>
+                    <a class="nav-link" :class="{ active: work }" href="./work.html">Work</a>
                 </li>
                 <li class="nav-item me-4">
-                    <a class="nav-link" :class="{ active: contact }" href="./contact">Contact</a>
+                    <a class="nav-link" :class="{ active: contact }" href="./contact.html">Contact</a>
                 </li>
             </ul>
             <div class="social pe-5">
