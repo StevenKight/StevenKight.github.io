@@ -53,7 +53,7 @@ var app = Vue.createApp({
     }
 })
 
-const checkpoint = 300;
+const checkpoint = 500;
  
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;

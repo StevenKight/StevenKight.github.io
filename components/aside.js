@@ -11,7 +11,7 @@ app.component('aside-component', {
     },
     template: /* html */
     `
-    <aside>
+    <aside class="ps-2">
         <div id="classes" style="text-align: center;">
             <h4 style="margin-bottom: 1em;">Fall 2022 Class Schedule:</h4>
             <h5 style="color: white;" v-for="item in classes">
