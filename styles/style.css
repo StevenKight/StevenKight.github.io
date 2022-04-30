@@ -8,16 +8,21 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-image: radial-gradient(circle closest-corner at 70% 55%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .75), rgba(0, 0, 0, 1)) , 
+	background-color: black;
+	background-image: radial-gradient(circle closest-side at 70% 50%, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, .75), rgba(0, 0, 0, 1)) , 
 						url("../images/coding-backgorund.jpg.jpg");
-	background-position: center;
+	background-position: top;
+	background-size: 100vw 125vh;
+	background-repeat: no-repeat;
 }
 header, main {
 	padding: 1em 5em;
 }
+footer {
+	padding: 2em 5em;
+}
 main {
 	color: white;
-	height: calc(100vh - 94px);
 	padding-bottom: -16px;
 }
 .hidden {
@@ -28,14 +33,14 @@ main {
 }
 
 /* Link underline animation */
-main a {
+main a, footer a {
 	color: var(--orange);
 	text-decoration: underline;
  	text-decoration-color: transparent;
 	text-underline-offset: 0.4em;
 	transition: var(--tranTime) ease-in-out;
 }
-main a:hover {
+main a:hover, footer a:hover {
 	color: var(--orange);
 	text-decoration: underline;
 	text-underline-offset: 0.4em;
@@ -46,13 +51,13 @@ main a:hover {
 }
 
 /* Nav bar */
-.bg-dark {
+.dark-bg {
 	background-color: rgba(0, 0, 0, 0) !important;
 	-webkit-transition: background-color var(--navTranTime) linear;
     -ms-transition: background-color var(--navTranTime) linear;
     transition: background-color var(--navTranTime) linear;
 }
-.bg-dark:hover {
+.dark-bg:hover {
 	background-color: rgba(0, 0, 0, 1) !important;
 	-webkit-transition: background-color var(--tranTime) linear;
     -ms-transition: background-color var(--tranTime) linear;
@@ -82,6 +87,25 @@ main a:hover {
 }
 #github {
 	padding-right: .75em;
+}
+
+/* Footer */
+.bg-dark {
+	background-color: rgba(0, 0, 0, 0.85) !important;
+	-webkit-transition: background-color var(--navTranTime) linear;
+    -ms-transition: background-color var(--navTranTime) linear;
+    transition: background-color var(--navTranTime) linear;
+}
+.bg-dark:hover {
+	background-color: rgba(0, 0, 0, 1) !important;
+	-webkit-transition: background-color var(--tranTime) linear;
+    -ms-transition: background-color var(--tranTime) linear;
+    transition: background-color var(--tranTime) linear;
+}
+footer div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 /* Index page */
@@ -122,41 +146,24 @@ main h5 {
 #heading {
 	height: 75vh;
 }
-main .section {
-	height: 75vh;
-	background-color: black;
+#sections {
+	opacity: 0;
+}
+.section {
+	height: 60vh;
+	padding-top: 2em;
 	margin-left: 0em;
 	width: 100vw;
+	background-color: rgba(0, 0, 0, 1);
 }
 .workLearnMore {
 	padding-top: 1em;
 }
-main .section img {
+.section img {
 	padding-right: .5em;
 }
 
 @media (max-width: 525px) {
-	/* Same on all pages */
-	header, main {
-		padding: 1em 2em;
-	}
-	.hide {
-		display: none;
-	}
-	.hidden {
-		display: inline;
-	}
-	a {
-		color: var(--orange);
-		text-decoration: underline 0.1em rgba(255, 166, 0, 1);
-		text-underline-offset: 0.4em;
-	}
-	a:hover {
-		color: var(--orange);
-		text-decoration: underline 0.1em rgba(255, 166, 0, 1);
-		text-underline-offset: 0.4em;
-	}
-
 	/* Index Page */
 	main h1 {
 		margin-bottom: 0em;
@@ -167,8 +174,8 @@ main .section img {
 	}
 
 	/* Work Page */
-	#heading {
-		height: 100vh;
-		margin: 0.5em 0;
-	}
+    #heading {
+        height: 100vh;
+        margin: 0.5em 0;
+    }
 }

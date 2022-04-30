@@ -19,8 +19,8 @@ app.component('header-component', {
     },
     template: /* html */
     `
-    <header class="bg-dark row header">
+    <header class="dark-bg row header">
         <navigation :home="home" :about="about" :work="work" :contact="contact"></navigation>
     </header>
     `
-})
+});

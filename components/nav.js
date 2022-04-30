@@ -61,4 +61,4 @@ app.component('navigation', {
         </div>
     </nav>
     `
-})
+});

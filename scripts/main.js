@@ -20,6 +20,28 @@ var app = Vue.createApp({
                     days: "Monday and Wednesday",
                     time: "2:00 PM"
                 }
+            },
+            workFeilds: {
+                1: {
+                    name: "Artificial Intellegence",
+                    icon: "./images/work-icons/artificial-intelligence.svg"
+                },
+                2: {
+                    name: "Web Development",
+                    icon: "./images/work-icons/web-development.svg"
+                },
+                3: {
+                    name: "Database",
+                    icon: "./images/work-icons/database.svg"
+                },
+                4: {
+                    name: "Graphic Design",
+                    icon: "./images/work-icons/graphic-design.svg"
+                },
+                5: {
+                    name: "Engineering",
+                    icon: "./images/work-icons/engineering.svg"
+                }
             }
         }
     },
@@ -30,3 +52,15 @@ var app = Vue.createApp({
         
     }
 })
+
+const checkpoint = 300;
+ 
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = 0 + currentScroll / checkpoint;
+  } else {
+    opacity = 1;
+  }
+  document.querySelector("#sections").style.opacity = opacity;
+});

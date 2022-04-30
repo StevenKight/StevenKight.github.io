@@ -14,12 +14,11 @@
 				crossorigin="anonymous"></script>
 		<!-- End Bootstrap CDN -->
 		<!-- Import Styles -->
-		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="./styles/style.css">
 		<!-- Import Vue.js -->
 		<script src="https://unpkg.com/vue@next"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="./scripts/main.js" defer></script>
 			
 	</head>
 	<body class="box">
@@ -33,42 +32,11 @@
 					</h1>
 					<h5>Sorted from most recent to oldest below.</h5>
 				</div>
-				<div class="section" id="AI">
-					<h3>
-						<img src="./images/work-icons/artificial-intelligence.svg" class="black" width="100" alt="AI Icon">
-						Artificial Intellegence
-					</h3>
-					<h5 class="workLearnMore"><a href="./ai.html">Learn More &#62;</a></h5>
-				</div>
-				<div class="section" id="Web">
-					<h3>
-						<img src="./images/work-icons/web-development.svg" class="black" width="100" alt="Web development Icon">
-						Web development
-					</h3>
-					<h5 class="workLearnMore"><a href="./websites.html">Learn More &#62;</a></h5>
-				</div>
-				<div class="section" id="Database">
-					<h3> 
-						<img src="./images/work-icons/database.svg" class="black" width="100" alt="Database Icon"> 
-						Database
-					</h3>
-					<h5 class="workLearnMore"><a href="./database.html">Learn More &#62;</a></h5>
-				</div>
-				<div class="section" id="Graphics">
-					<h3>
-						<img src="./images/work-icons/graphic-design.svg" class="black" width="100" alt="Graphic Design Icon">
-						Graphic Design
-					</h3>
-					<h5 class="workLearnMore"><a href="">Learn More &#62;</a></h5>
-				</div>
-				<div class="section" id="Engineering">
-					<h3>
-						<img src="./images/work-icons/engineering.svg" class="black" width="100" alt="Engineering Icon">
-						Engineering
-					</h3>
-					<h5 class="workLearnMore"><a href="">Learn More &#62;</a></h5>
+				<div id="sections">
+					<work-component :work="workFeilds"></work-component>
 				</div>
 			</main>
+			<footer-component></footer-component>
 		</div>
 
 		<!-- Import app -->
@@ -77,6 +45,9 @@
 		<!-- Import the component files -->
 		<script src="./components/header.js"></script>
 		<script src="./components/nav.js"></script>
+		<script src="./components/footer.js"></script>
+		<script src="./components/work.js"></script>
+		<script src="./components/aside.js"></script>
 
 		<!-- Mount App -->
 		<script>
