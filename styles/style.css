@@ -163,6 +163,12 @@ main h5 {
 	padding-right: .5em;
 }
 
+@media (min-width: 575px) {
+	#index-main {
+		height: 76vh;
+	}
+}
+
 @media (max-width: 575px) {
 	/* Same on all pages */
 	header, main {
