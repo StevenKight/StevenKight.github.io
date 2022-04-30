@@ -28,6 +28,9 @@ main {
 .black {
 	filter: brightness(0) invert(1);
 }
+.hidden {
+	display: none;
+}
 
 /* Link underline animation */
 main a, footer a {
@@ -160,7 +163,7 @@ main h5 {
 	padding-right: .5em;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 575px) {
 	/* Same on all pages */
 	header, main {
 		padding: 1em 1em;
@@ -171,8 +174,17 @@ main h5 {
 	.hide {
 		display: none;
 	}
+	.hidden {
+		display: inline;
+	}
 	footer div {
 		display: block;
+	}
+	aside {
+		padding-top: 1em;
+	}
+	#sections {
+		margin-top: -22em;
 	}
 
 	/* Index Page */
@@ -194,4 +206,10 @@ main h5 {
         height: 100vh;
         margin: 0.5em 0;
     }
+}
+
+@media (max-width: 400px) {
+	#sections {
+		margin-top: -15em;
+	}
 }
