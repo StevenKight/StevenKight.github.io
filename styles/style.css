@@ -184,6 +184,11 @@ main h5 {
 		padding-bottom: 5em;
 	}
 
+	/* About Page */
+	#tools {
+		margin-top: 1em; 
+	}
+
 	/* Work Page */
     #heading {
         height: 100vh;
