@@ -25,9 +25,6 @@ main {
 	color: white;
 	padding-bottom: -16px;
 }
-.hidden {
-	display: none;
-}
 .black {
 	filter: brightness(0) invert(1);
 }
@@ -164,6 +161,20 @@ main h5 {
 }
 
 @media (max-width: 525px) {
+	/* Same on all pages */
+	header, main {
+		padding: 1em 1em;
+	}
+	footer {
+		padding: 2em 1em;
+	}
+	.hide {
+		display: none;
+	}
+	footer div {
+		display: block;
+	}
+
 	/* Index Page */
 	main h1 {
 		margin-bottom: 0em;
