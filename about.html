@@ -25,22 +25,24 @@
 		<div id="app">
 			<header-component about></header-component>
 			<main>
-				<div id="aboutMe" style="float: left;">
-					<h2 style="margin-bottom: 1em;">About Me</h2>
-					<p>
-						Hello there! I'm Steven Kight. <br>
-						<br>
-						{{ resumeInfo.introduction }}
-						<br><br>
-						I also have a background in Graphic Design with newspapers and smaller projects
-						around my hometown of Rome, Georgia.
-						<br><br>
-						Interested? <a href="./contact.html">Get in touch</a>.<br>
-						<br>
-						Want to see more? <a href="./work.html">Check out some of my work</a>.
-					</p>
+				<div id="aboutMeFlex">
+					<div id="aboutMe">
+						<h2 style="margin-bottom: 1em;">About Me</h2>
+						<p>
+							Hello there! I'm Steven Kight. <br>
+							<br>
+							{{ resumeInfo.introduction }}
+							<br><br>
+							I also have a background in Graphic Design with newspapers and smaller projects
+							around my hometown of Rome, Georgia.
+							<br><br>
+							Interested? <a href="./contact.html">Get in touch</a>.<br>
+							<br>
+							Want to see more? <a href="./work.html">Check out some of my work</a>.
+						</p>
+					</div>
+					<aside-component :classes="classes" tool></aside-component>
 				</div>
-				<aside-component :classes="classes" tool></aside-component>
 				<resume :resumedata="resumeInfo"></resume>
 			</main>
 			<footer-component></footer-component>

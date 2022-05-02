@@ -56,15 +56,6 @@ main a:hover, footer a:hover {
 /* Nav bar */
 .dark-bg {
 	background-color: rgba(0, 0, 0, 0) !important;
-	-webkit-transition: background-color var(--navTranTime) linear;
-    -ms-transition: background-color var(--navTranTime) linear;
-    transition: background-color var(--navTranTime) linear;
-}
-.dark-bg:hover {
-	background-color: rgba(0, 0, 0, 1) !important;
-	-webkit-transition: background-color var(--tranTime) linear;
-    -ms-transition: background-color var(--tranTime) linear;
-    transition: background-color var(--tranTime) linear;
 }
 .active {
     color: var(--orange) !important;
@@ -202,9 +193,10 @@ main h5 {
 	padding-right: .5em;
 }
 
-@media (min-width: 575px) {
-	#index-main {
-		height: 76vh;
+@media (min-width: 850px) {
+	#aboutMeFlex {
+		display: flex;
+		flex-direction: row;
 	}
 
 	#aboutMe {
@@ -212,6 +204,12 @@ main h5 {
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 		hyphens: auto;
+	}
+}
+
+@media (min-width: 575px) {
+	#index-main {
+		height: 76vh;
 	}
 }
 
@@ -249,8 +247,11 @@ main h5 {
 	}
 
 	/* About Page */
+	aside {
+		margin-top: 2em;
+	}
 	#tools {
-		margin-top: 1em; 
+		margin-top: -1.5em;
 	}
 
 	/* Work Page */

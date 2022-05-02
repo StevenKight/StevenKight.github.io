@@ -41,7 +41,7 @@ var app = Vue.createApp({
                         degree: "Bachelor of Science in Computer Science",
                         dates: {
                             start: "2022",
-                            end: "PRESENT"
+                            end: "2024"
                         }
                     },
                     2: {
