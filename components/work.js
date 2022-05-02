@@ -12,7 +12,7 @@ app.component('work-component', {
             <img :src="item.icon" class="black" width="100" :alt="item.name">
             {{ item.name }}
         </h3>
-        <h5 class="workLearnMore"><a href="">Learn More &#62;</a></h5>
+        <h5 class="workLearnMore"><a :href="item.link">Learn More &#62;</a></h5>
     </div>
     `
 });

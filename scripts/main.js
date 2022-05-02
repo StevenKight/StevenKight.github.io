@@ -63,7 +63,8 @@ var app = Vue.createApp({
                 },
                 experience: {
                     1: {
-                        buisness: "RST",
+                        buisness: "RST LLC",
+                        url: "https://www.rsttruckrepair.com/",
                         title: "Mechanic / Systems Improvement",
                         dates: {
                             start: "April 2020",
@@ -72,6 +73,7 @@ var app = Vue.createApp({
                     },
                     2: {
                         buisness: "Six Mile Post",
+                        url: "https://sixmilepost.com/",
                         title: "Graphic Designer",
                         dates: {
                             start: "Februaru 2020",
@@ -88,23 +90,28 @@ var app = Vue.createApp({
             workFeilds: {
                 1: {
                     name: "Artificial Intellegence",
-                    icon: "./images/work-icons/artificial-intelligence.svg"
+                    icon: "./images/work-icons/artificial-intelligence.svg",
+                    link: "./ai.html"
                 },
                 2: {
                     name: "Web Development",
-                    icon: "./images/work-icons/web-development.svg"
+                    icon: "./images/work-icons/web-development.svg",
+                    link: "./websites.html"
                 },
                 3: {
                     name: "Database",
-                    icon: "./images/work-icons/database.svg"
+                    icon: "./images/work-icons/database.svg",
+                    link: "./database.html"
                 },
                 4: {
                     name: "Graphic Design",
-                    icon: "./images/work-icons/graphic-design.svg"
+                    icon: "./images/work-icons/graphic-design.svg",
+                    link: ""
                 },
                 5: {
                     name: "Engineering",
-                    icon: "./images/work-icons/engineering.svg"
+                    icon: "./images/work-icons/engineering.svg",
+                    link: ""
                 }
         }
     };
