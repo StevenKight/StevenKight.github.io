@@ -42,10 +42,10 @@ var app = Vue.createApp({
                     name: "Engineering",
                     icon: "./images/work-icons/engineering.svg"
                 }
-            }
         }
+    };
     },
-    methods : {
+    methods: {
 
     },
     calculated: {

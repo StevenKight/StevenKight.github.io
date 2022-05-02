@@ -21,7 +21,7 @@ app.component('aside-component', {
         <div id="tools" :style= "[tool ? { 'visibility': 'visible' } : { 'visibility': 'hidden' }]"> 
             <h3 style="margin-bottom: 1em;">Tools I Love Using</h3>
             <div id="logos">
-                <div style="margin-bottom: 2em;">
+                <div style="margin-bottom: 1em;">
                     <a href="https://www.python.org/" target="blank">
                         <img class="img-fluid" src="./images/logos/python.png" alt="Python logo" 
                             width="60" style="margin-right: 20px">

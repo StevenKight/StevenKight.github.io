@@ -16,10 +16,10 @@ body {
 	background-repeat: no-repeat;
 }
 header, main {
-	padding: 1em 5em;
+	padding: 0.5em 5em;
 }
 footer {
-	padding: 2em 5em;
+	padding: 1em 5em;
 }
 main {
 	color: white;
@@ -28,8 +28,11 @@ main {
 .black {
 	filter: brightness(0) invert(1);
 }
-.hidden {
+.hidden{
 	display: none;
+}
+.show{
+	display: block;
 }
 
 /* Link underline animation */
@@ -91,16 +94,7 @@ main a:hover, footer a:hover {
 
 /* Footer */
 .bg-dark {
-	background-color: rgba(0, 0, 0, 0.85) !important;
-	-webkit-transition: background-color var(--navTranTime) linear;
-    -ms-transition: background-color var(--navTranTime) linear;
-    transition: background-color var(--navTranTime) linear;
-}
-.bg-dark:hover {
 	background-color: rgba(0, 0, 0, 1) !important;
-	-webkit-transition: background-color var(--tranTime) linear;
-    -ms-transition: background-color var(--tranTime) linear;
-    transition: background-color var(--tranTime) linear;
 }
 footer div {
 	display: flex;
@@ -132,14 +126,51 @@ main h5 {
 	border-radius: 1em;
 }
 #tools {
-	margin-top: 2em; 
+	margin-top: 1em; 
 	text-align: center;
 }
 #logos a {
 	text-decoration: none;
 }
 #logos img {
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
+}
+
+/* Resume */
+.btn-primary {
+	background-color: white;
+	border: 1px solid black;
+}
+.accord-button {
+	background-color: rgb(0, 0, 0, 1); /* #efefef;*/
+	color: white;
+}
+.arrow {
+  	border: solid var(--orange);
+  	border-width: 0 3px 3px 0;
+  	display: inline-block;
+  	padding: 3px;
+}
+.up {
+  	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+	margin-bottom: 0.15em;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	margin-bottom: 0.25em;
+}
+.accord-header button {
+	color: var(--orange);
+	width: 50%;
+	text-align: center;
+	padding: .25em;
+}
+.accord-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Work Page */
