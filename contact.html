@@ -30,7 +30,30 @@
 					method="post"
 					class="needs-validation"
 					novalidate>
-					
+					<div class="row mb-3 mt-4">
+						<div class="col">
+						  <label class="form-label" for="firstname">First Name<sup>*</sup></label>
+						  <input type="text" 
+							placeholder="First Name" 
+							id="firstname" name="firstname" 
+							class="form-control"
+							required>
+							<div class="invalid-feedback">
+							  Please provide your first name.
+							</div>
+						</div>
+						<div class="col">
+						  <label class="form-label" for="lastname">Last Name<sup>*</sup></label>
+						  <input type="text" 
+							placeholder="Last Name" 
+							id="lastname" name="lastname" 
+							class="form-control"
+							>
+							<div class="invalid-feedback">
+							  Please provide your last name.
+							</div>
+						</div>
+					  </div>
 				</form>
 			</main>
 			<footer-component></footer-component>
