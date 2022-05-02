@@ -7,21 +7,32 @@ app.component('aside-component', {
         tool: {
             type: Boolean,
             required: false
+        },
+        contact: {
+            type: Boolean,
+            required: false
         }
     },
     template: /* html */
     `
     <aside class="ps-2">
         <div id="classes" style="text-align: center;">
-            <h4 style="margin-bottom: 1em;">Fall 2022 Class Schedule:</h4>
+            <h4 class="mb-4">Fall 2022 Class Schedule:</h4>
             <h5 style="color: white;" v-for="item in classes">
                 {{ item.name }} at {{ item.time }} on {{ item.days }} with {{ item.instructer }}
             </h5>
         </div>
+        <div id="contact" style="text-align: center;" class="mt-5"
+            :style= "[contact ? { 'visibility': 'visible' } : { 'visibility': 'hidden' }]">
+            <h4 class="mb-4">Ways to contact me:</h4>
+            <h5>Contact forum on the right.</h5>
+            <h5><a href="mailto:sgk0711@gmail.com">sgk0711@gmail.com<a></h5>
+            <h5><a href="tel:7063467899">706-346-7899<a></h5>
+        </div>
         <div id="tools" :style= "[tool ? { 'visibility': 'visible' } : { 'visibility': 'hidden' }]"> 
-            <h3 style="margin-bottom: 1em;">Tools I Love Using</h3>
+            <h3 class="mb-4">Tools I Love Using</h3>
             <div id="logos">
-                <div style="margin-bottom: 1em;">
+                <div class="mb-4">
                     <a href="https://www.python.org/" target="blank">
                         <img class="img-fluid" src="./images/logos/python.png" alt="Python logo" 
                             width="60" style="margin-right: 20px">

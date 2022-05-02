@@ -24,8 +24,14 @@
 	<body class="box">
 		<div id="app">
 			<header-component contact></header-component>
-			<main>
-				<aside-component :classes="classes" :tool="false"></aside-component>
+			<main id="contactFlex">
+				<aside-component :classes="classes" contact class="pt-4"></aside-component>
+				<form action=""
+					method="post"
+					class="needs-validation"
+					novalidate>
+					
+				</form>
 			</main>
 			<footer-component></footer-component>
 		</div>

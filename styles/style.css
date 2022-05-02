@@ -201,7 +201,7 @@ main h5 {
 }
 
 @media (min-width: 850px) {
-	#aboutMeFlex {
+	#aboutMeFlex, #contactFlex {
 		display: flex;
 		flex-direction: row;
 	}
