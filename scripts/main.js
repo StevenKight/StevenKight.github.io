@@ -40,7 +40,7 @@ var app = Vue.createApp({
                         name: "West Georgia",
                         degree: "Bachelor of Science in Computer Science",
                         dates: {
-                            start: "January 2022",
+                            start: "2022",
                             end: "PRESENT"
                         }
                     },
@@ -48,16 +48,16 @@ var app = Vue.createApp({
                         name: "Georgia Highlands College",
                         degree: "Associates of Science in Computer Science",
                         dates: {
-                            start: "August 2019",
-                            end: "December 2021"
+                            start: "2019",
+                            end: "2021"
                         }
                     },
                     3: {
                         name: "Rome High School",
                         degree: "Highschool Diploma",
                         dates: {
-                            start: "August 2016",
-                            end: "May 2020"
+                            start: "2016",
+                            end: "2020"
                         }
                     }
                 },
