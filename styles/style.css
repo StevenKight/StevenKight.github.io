@@ -25,6 +25,9 @@ main {
 	color: white;
 	padding-bottom: -16px;
 }
+#main {
+	height: 75vh;
+}
 .black {
 	filter: brightness(0) invert(1);
 }
@@ -213,7 +216,7 @@ main h5 {
 
 @media (min-width: 575px) {
 	#indexMain {
-		height: 76vh;
+		height: 75vh;
 	}
 }
 
