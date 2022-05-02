@@ -46,7 +46,7 @@ app.component('resume', {
                                 <h5>{{ degree.degree }}</h5>
                             </div>
                             <div class="col">
-                                <h4>{{ formatDates(degree.dates) }}</h4>
+                                <h5>{{ formatDates(degree.dates) }}</h5>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ app.component('resume', {
                                 <h5>{{ experience.title }}</h5>
                             </div>
                             <div class="col">
-                                <h4>{{ formatDates(experience.dates) }}</h4>
+                                <h5>{{ formatDates(experience.dates) }}</h5>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ app.component('resume', {
                     <div v-for="skillset in resumedata.skills">
                         <div class="row mb-3">
                             <div class="col-3">
-                                
+
                             </div>
                             <div class="col" style="text-align: left">
                                 <h5>{{ skillset }}</h5>
