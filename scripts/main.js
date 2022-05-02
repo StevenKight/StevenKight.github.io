@@ -21,6 +21,70 @@ var app = Vue.createApp({
                     time: "2:00 PM"
                 }
             },
+            resumeInfo : {
+                contact: {
+                    name: {
+                        firstName: "Steven",
+                        lastName: "Kight"
+                    },
+                    email: "sgk0711@gmail.com",
+                    phone: "7063467899",
+                    linkedIn: "https://www.linkedin.com/in/steven-kight-742729177/",
+                    city: "Carrollton",
+                    state: "Georgia",
+                    zip: "30165"
+                },
+                introduction: "I am a student attending the University of West Georgia. I obtained my Associates of Science in Computer Science from Georgia Highlands college and attending West Georgia for my Bachelor of Science in Computer Science. I am passionate about my research into Artificial Intellegence and in Web Development and Database systems.",
+                education: {
+                    1: {
+                        name: "West Georgia",
+                        degree: "Bachelor of Science in Computer Science",
+                        dates: {
+                            start: "January 2022",
+                            end: "PRESENT"
+                        }
+                    },
+                    2: {
+                        name: "Georgia Highlands College",
+                        degree: "Associates of Science in Computer Science",
+                        dates: {
+                            start: "August 2019",
+                            end: "December 2021"
+                        }
+                    },
+                    3: {
+                        name: "Rome High School",
+                        degree: "Highschool Diploma",
+                        dates: {
+                            start: "August 2016",
+                            end: "May 2020"
+                        }
+                    }
+                },
+                experience: {
+                    1: {
+                        buisness: "RST",
+                        title: "Mechanic / Systems Improvement",
+                        dates: {
+                            start: "April 2020",
+                            end: "July 2021"
+                        }
+                    },
+                    2: {
+                        buisness: "Six Mile Post",
+                        title: "Graphic Designer",
+                        dates: {
+                            start: "Februaru 2020",
+                            end: "May 2020"
+                        }
+                    }
+                },
+                skills: [
+                    "Programming/Markup Languages: Python, C++, Java, HTML, CSS, JavaScript", 
+                    "Database Management: MySQL, Access",
+                    "Graphics: Illustrator, InDesign"
+                ]
+            },
             workFeilds: {
                 1: {
                     name: "Artificial Intellegence",
@@ -52,15 +116,3 @@ var app = Vue.createApp({
         
     }
 })
-
-const checkpoint = 500;
- 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    opacity = 0 + currentScroll / checkpoint;
-  } else {
-    opacity = 1;
-  }
-  document.querySelector("#sections").style.opacity = opacity;
-});

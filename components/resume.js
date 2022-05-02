@@ -4,19 +4,11 @@ app.component('resume', {
             resume: false
         }
     },
-    methods: {
-        toggleSection(){
-            this.resume = !this.resume;
-
-            if (this.resume) {
-                window.scrollBy(0, 200);
-            } else {
-                window.scrollBy(0, -200);
-            }
-        }
-    },
     props: {
-        
+        resumeInfo: {
+            type: Object,
+            required: true
+        }
     },
     template: /* html */
     `
@@ -124,6 +116,35 @@ app.component('resume', {
             </div>
         </div> 
     </div>
-    `
+    `,
+    methods: {
+        toggleSection(){
+            this.resume = !this.resume;
+
+            if (this.resume) {
+                window.scrollBy(0, 200);
+            } else {
+                window.scrollBy(0, -200);
+            }
+        }
+    },
+    computed: {
+        formattedPhone() {
+            let contactInfo = this.resumeInfo.contact;
+            return contactInfo.phone.slice(0, 3) + "-" + contactInfo.phone.slice(3, 6) + "-" + contactInfo.phone.slice(6);  //xxx-xxx-xxxx
+        },
+        phoneURL() {
+            let contactInfo = this.resumeInfo.contact;
+            return "tel:" + contactInfo.phone; //tel:xxxxxxxxxx
+        },
+        emailURL() {
+            let contactInfo = this.resumeInfo.contact;
+            return "mailto:" + contactInfo.email; //mailto:xxxx@xx.xxx
+        },
+        formattedCityStateZip() {
+            let contactInfo = this.resumeInfo.contact;
+            return contactInfo.city + ", " + contactInfo.state +  " " + contactInfo.zip; //city, state zip
+        }
+    }
 });
 

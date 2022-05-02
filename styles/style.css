@@ -198,6 +198,13 @@ main h5 {
 	#index-main {
 		height: 76vh;
 	}
+
+	#aboutMe {
+		width: 40%;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
 }
 
 @media (max-width: 575px) {
@@ -236,18 +243,6 @@ main h5 {
 	/* About Page */
 	#tools {
 		margin-top: 1em; 
-	}
-
-	/* Resume */
-	.up {
-		transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-		margin-bottom: 0.25em;
-	}
-	.down {
-		transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-		margin-bottom: 0.25em;
 	}
 
 	/* Work Page */
