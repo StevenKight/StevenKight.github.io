@@ -24,7 +24,7 @@ app.component('resume', {
                 <div class="accord-body" :class="{show: resume, hidden: !resume}">
                     <div class="row mb-3 mt-4">
                         <div class="col-6">
-                            <h2>{{ resumedata.contact.name.firstName }} {{ resumedata.contact.name.lastName }}</h2>
+                            <h2>{{ formattedName }}</h2>
                         </div>
                         <div class="col-3">
                             <h6><a :href="phoneURL" id="resumePhone">{{ formattedPhone }}</a> 
@@ -120,6 +120,10 @@ app.component('resume', {
         formattedCityStateZip() {
             let contactInfo = this.resumedata.contact;
             return contactInfo.city + ", " + contactInfo.state +  " " + contactInfo.zip; //city, state zip
+        },
+        formattedName() {
+            let nameInfo = this.resumedata.contact.name;
+            return nameInfo.firstName + " " + nameInfo.lastName
         }
     }
 });
