@@ -63,7 +63,8 @@ var app = Vue.createApp({
                 },
                 experience: {
                     1: {
-                        buisness: "RST",
+                        buisness: "RST LLC",
+                        url: "https://www.rsttruckrepair.com/",
                         title: "Mechanic / Systems Improvement",
                         dates: {
                             start: "April 2020",
@@ -72,6 +73,7 @@ var app = Vue.createApp({
                     },
                     2: {
                         buisness: "Six Mile Post",
+                        url: "https://sixmilepost.com/",
                         title: "Graphic Designer",
                         dates: {
                             start: "Februaru 2020",

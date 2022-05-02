@@ -58,7 +58,9 @@ app.component('resume', {
                     <div v-for="experience in resumedata.experience">
                         <div class="row mb-3">
                             <div class="col">
-                                <h4>{{ experience.buisness }}</h4>
+                                <h4>
+                                    <a :href="experience.url">{{ experience.buisness }}</a>
+                                </h4>
                             </div>
                             <div class="col">
                                 <h5>{{ experience.title }}</h5>
