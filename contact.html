@@ -25,99 +25,86 @@
 		<div id="app">
 			<header-component contact></header-component>
 			<main id="contactFlex">
-				<aside-component :classes="classes" contact class="pt-4"></aside-component>
+				<div>
+					<aside-component :classes="classes" contact class="pt-4"></aside-component>
+					<div id="contact" style="text-align: center;" class="mt-5">
+						<h4 class="mb-4">Ways to contact me:</h4>
+						<h5>Contact forum on the right.</h5>
+						<h5><a href="mailto:sgk0711@gmail.com">sgk0711@gmail.com<a></h5>
+						<h5><a href="tel:7063467899">706-346-7899<a></h5>
+					</div>
+				</div>
 				<form action=""
-					method="post"
-					class="needs-validation"
-					novalidate>
+					method="post">
+					<legend><h4>Contact:</h4></legend>
 					<div class="row mb-3 mt-4">
 						<div class="col">
-						  <label class="form-label" for="firstname">First Name<sup>*</sup></label>
-						  <input type="text" 
-							placeholder="First Name" 
-							id="firstname" name="firstname" 
-							class="form-control"
-							required>
+							<label class="form-label" for="firstname">
+								First Name <abbr title="required">*</abbr>
+							</label>
+							<input type="text" 
+								placeholder="First Name" 
+								id="firstname" name="firstname" 
+								class="form-control"
+								required>
 							<div class="invalid-feedback">
 							  Please provide your first name.
 							</div>
 						</div>
 						<div class="col">
-						  <label class="form-label" for="lastname">Last Name<sup>*</sup></label>
-						  <input type="text" 
-							placeholder="Last Name" 
-							id="lastname" name="lastname" 
-							class="form-control"
-							>
+							<label class="form-label" for="lastname">
+								Last Name <abbr title="required">*</abbr>
+							</label>
+							<input type="text" 
+								placeholder="Last Name" 
+								id="lastname" name="lastname" 
+								class="form-control"
+								required>
 							<div class="invalid-feedback">
-							  Please provide your last name.
+								Please provide your last name.
 							</div>
 						</div>
-					  </div>
-					  <div class="row mb-3">
+					</div>
+					<div class="row mb-3">
 						<div class="col">
-						  <label class="form-label" for="address1">Address Line 1<sup>*</sup></label>
-						  <input type="text" 
-							placeholder="123 Example Street" 
-							id="address1" name="address1"
-							class="form-control"
-							>
-						</div>
-						<div class="col">
-						  <label class="form-label" for="address2">Address Line 2</label>
-						  <input type="text" 
-							placeholder="Suite 900" 
-							id="address2" name="address2"
-							class="form-control">
-						</div>
-					  </div>
-					  <div class="row mb-3">
-						<div class="col">
-						  <label class="form-label" for="city">City<sup>*</sup></label>
-						  <input type="text" 
-							placeholder="Roswell" 
-							id="city" name="city"
-							class="form-control"
-							>
-						</div>
-						<div class="col">
-						  <label class="form-label" for="physicalstate">State<sup>*</sup></label>
-						  <select name="physicalstate" id="physicalstate" 
-							class="form-select"
-							>
-							<option value="">Choose ... </option>
-							<option value="AL">Alabama</option>
-							<option value="GA" selected>Georgia</option>
-							<option value="TN">Tennessee</option>
-							<option value="SC">South Caroline</option>
-							<option value="Fl">Florida</option>
-						  </select>
-						</div>
-						<div class="col">
-						  <label class="form-label" for="zip">Zip<sup>*</sup></label>
-						  <input type="text" 
-							placeholder="30075" 
-							id="zip" name="zip"
-							class="form-control"
-							>
-						</div>
-					  </div>
-					  <div class="row mb-3">
-						<div class="col">
-						  <label class="form-label" for="phone">Phone<sup>*</sup></label>
-						  <input type="tel" 
-							placeholder="000-000-0000" 
-							id="phone" name="phone" 
-							class="form-control"
-							>
+							<label class="form-label" for="phone">Phone</label>
+							<input type="tel" 
+								placeholder="000-000-0000" 
+								id="phone" name="phone" 
+								class="form-control">
 						</div>                  
 						<div class="col">
-						  <label class="form-label" for="email">Email</label>
-						  <input type="email" 
-							placeholder="info@example.com" 
-							id="email" name="email"
-							class="form-control"
-							>
+							<label class="form-label" for="email">
+								Email <abbr title="required">*</abbr>
+							</label>
+							<input type="email" 
+								placeholder="info@example.com" 
+								id="email" name="email"
+								class="form-control"
+								required>
+							<div class="invalid-feedback">
+								Please provide your email.
+							</div>
+						</div>
+					</div>
+					<div class="row mb-3 mt-5">
+						<div class="col">
+							<textarea rows="4" cols="50" placeholder="Please provide a description..."></textarea>
+							<div class="invalid-feedback">
+								Please provide a description.
+							</div>
+						</div>
+					</div>
+					<div class="row mb-3 mt-5">
+						<div class="col">
+							<input type="submit" 
+								placeholder="Submit"
+								class="form-control button">
+						</div>
+						<div class="col">
+							<input type="reset" 
+								placeholder="Reset"
+								class="form-control button">
 						</div>
 					</div>
 				</form>

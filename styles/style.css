@@ -1,7 +1,7 @@
 :root {
-	--navTranTime: 375ms;
 	--tranTime: 500ms;
-	--orange: rgb(255, 166, 0);
+	--orange: rgba(255, 166, 0, 1);
+	--tranOrange: rgba(255, 166, 0, 0.75);
 }
 
 /* Same on all pages */
@@ -51,9 +51,9 @@ main a:hover, footer a:hover {
 	text-decoration: underline;
 	text-underline-offset: 0.4em;
 
-	text-decoration-color: rgba(255, 166, 0, 1);
-	-webkit-text-decoration-color: rgba(255, 166, 0, 1);
-	-moz-text-decoration-color: rgba(255, 166, 0, 1);
+	text-decoration-color: var(--orange);
+	-webkit-text-decoration-color: var(--orange);
+	-moz-text-decoration-color: var(--orange);
 }
 
 /* Nav bar */
@@ -200,10 +200,33 @@ main h5 {
 	padding-right: .5em;
 }
 
+/* Contact Page */
+form {
+	text-align: center;
+}
+.button {
+	background: var(--tranOrange);
+	border: 0px;
+	font-weight: bold;
+	font-size: large;
+	transition: var(--tranTime) ease-in-out;
+}
+.button:hover {
+	background: var(--orange);
+	border: 0px;
+	font-weight: bold;
+	font-size: large;
+}
+
+
 @media (min-width: 850px) {
 	#aboutMeFlex, #contactFlex {
 		display: flex;
 		flex-direction: row;
+	}
+
+	#contactFlex {
+		justify-content: space-around;
 	}
 
 	#aboutMe {
