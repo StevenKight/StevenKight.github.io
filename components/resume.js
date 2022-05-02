@@ -7,6 +7,12 @@ app.component('resume', {
     methods: {
         toggleSection(){
             this.resume = !this.resume;
+
+            if (this.resume) {
+                window.scrollBy(0, 200);
+            } else {
+                window.scrollBy(0, -200);
+            }
         }
     },
     props: {

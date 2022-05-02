@@ -157,8 +157,8 @@ main h5 {
 	margin-bottom: 0.15em;
 }
 .down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  	transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
 	margin-bottom: 0.25em;
 }
 .accord-header button {
@@ -212,7 +212,7 @@ main h5 {
 		display: none;
 	}
 	.hidden {
-		display: inline;
+		display: unset;
 	}
 	footer div {
 		display: block;
@@ -236,6 +236,18 @@ main h5 {
 	/* About Page */
 	#tools {
 		margin-top: 1em; 
+	}
+
+	/* Resume */
+	.up {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		margin-bottom: 0.25em;
+	}
+	.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		margin-bottom: 0.25em;
 	}
 
 	/* Work Page */
