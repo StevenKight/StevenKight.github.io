@@ -108,6 +108,9 @@ main h5 {
 #learnMore {
 	margin-top: 0.5em;
 }
+#index img {
+	border-radius: 50%;
+}
 
 /* About Page */
 .material-tooltip-main {
@@ -208,7 +211,7 @@ main h5 {
 }
 
 @media (min-width: 575px) {
-	#index-main {
+	#indexMain {
 		height: 76vh;
 	}
 }
