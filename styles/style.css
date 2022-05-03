@@ -235,6 +235,9 @@ form {
 		word-wrap: break-word;
 		hyphens: auto;
 	}
+	#rightAboutMe {
+		margin-left: 3em;
+	}
 }
 
 @media (min-width: 575px) {
