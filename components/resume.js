@@ -59,7 +59,7 @@ app.component('resume', {
                         <div class="row mb-3">
                             <div class="col">
                                 <h4>
-                                    <a :href="experience.url">{{ experience.buisness }}</a>
+                                    <a :href="experience.url" target="blank">{{ experience.buisness }}</a>
                                 </h4>
                             </div>
                             <div class="col">
