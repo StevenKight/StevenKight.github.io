@@ -5,7 +5,7 @@ var app = Vue.createApp({
                 1: {
                     name: "CS 3152",
                     instructer: "Anja Remshagen",
-                    days: "Monday and Wednesday",
+                    days: "Tuesday and Thursday",
                     time: "9:30 AM"
                 },
                 2: {
@@ -17,8 +17,14 @@ var app = Vue.createApp({
                 3: {
                     name: "CS 4275",
                     instructer: "Ana M. Stanescu",
-                    days: "Monday and Wednesday",
+                    days: "Tuesday and Thursday",
                     time: "2:00 PM"
+                },
+                4: {
+                    name: "ENGL 3405",
+                    instructer: "Crystal R. Shelnutt",
+                    days: "Monday and Wednesday",
+                    time: "5:30 PM"
                 }
             },
             resumeInfo : {

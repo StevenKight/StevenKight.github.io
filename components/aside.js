@@ -22,6 +22,18 @@ app.component('aside-component', {
                 {{ item.name }} at {{ item.time }} on {{ item.days }} with {{ item.instructer }}
             </h5>
         </div>
+        <div v-if="contact" class="contactInfo">
+            <p> Email: &emsp;
+                <a href="mailto:sgk0711@gmail.com">
+                sgk0711@gmail.com
+                </a>
+                <br>
+                Phone: &emsp;
+                <a href="tel:7063467899">
+                    706-346-7899
+                </a>
+            </p>
+        </div>
     </aside>
     `
 });

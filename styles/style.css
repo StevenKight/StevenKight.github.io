@@ -1,14 +1,15 @@
 :root {
 	--tranTime: 500ms;
-	--orange: #FE9D5D;
-	--dark: #1A2C38;
+	--main: #060B0E;
+	--accent: #FCC736;
+	--tranAccent: #FEAD0B;
 }
 
 /* Same on all pages */
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: var(--dark);
+	background-color: var(--main);
 	/* background-image: radial-gradient(circle closest-side at 70% 50%, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, .75), rgba(0, 0, 0, 1)) , 
 						url("../images/coding-backgorund.jpg.jpg"); */
 	background-position: top;
@@ -40,20 +41,20 @@ main {
 
 /* Link underline animation */
 main a, footer a {
-	color: var(--orange);
+	color: var(--accent);
 	text-decoration: underline;
  	text-decoration-color: transparent;
 	text-underline-offset: 0.4em;
 	transition: var(--tranTime) ease-in-out;
 }
 main a:hover, footer a:hover {
-	color: var(--orange);
+	color: var(--accent);
 	text-decoration: underline;
 	text-underline-offset: 0.4em;
 
-	text-decoration-color: var(--orange);
-	-webkit-text-decoration-color: var(--orange);
-	-moz-text-decoration-color: var(--orange);
+	text-decoration-color: var(--accent);
+	-webkit-text-decoration-color: var(--accent);
+	-moz-text-decoration-color: var(--accent);
 }
 
 /* Nav bar */
@@ -61,7 +62,7 @@ main a:hover, footer a:hover {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 .active {
-    color: var(--orange) !important;
+    color: var(--accent) !important;
 }
 .nav-item {
 	padding: 0 0.5em;
@@ -88,7 +89,7 @@ main a:hover, footer a:hover {
 
 /* Footer */
 .bg-dark {
-	background-color: var(--dark) !important;
+	background-color: var(--main) !important;
 }
 footer div {
 	display: flex;
@@ -111,8 +112,15 @@ main h5 {
 #learnMore {
 	margin-top: 0.5em;
 }
+#index img {
+	border-radius: 50%;
+	margin: 2.5em 10em 0 0;
+}
 
 /* About Page */
+#aboutMe h2 {
+	font-size: xx-large;
+}
 .material-tooltip-main {
 	margin-top: 0.5em;
 }
@@ -129,22 +137,18 @@ main h5 {
 #logos img {
 	margin-bottom: 1em;
 }
-#contactFlex img {
-	border-radius: 50%;
-	margin: 2.5em 10em 0 0;
-}
 
 /* Resume */
 .btn-primary {
 	background-color: white;
-	border: 1px solid var(--dark);
+	border: 1px solid var(--main);
 }
 .accord-button {
-	background-color: var(--dark); /* #efefef;*/
+	background-color: var(--main); /* #efefef;*/
 	color: white;
 }
 .arrow {
-  	border: solid var(--orange);
+  	border: solid var(--accent);
   	border-width: 0 3px 3px 0;
   	display: inline-block;
   	padding: 3px;
@@ -160,7 +164,7 @@ main h5 {
 	margin-bottom: 0.25em;
 }
 .accord-header button {
-	color: var(--orange);
+	color: var(--accent);
 	width: 50%;
 	text-align: center;
 	padding: .25em;
@@ -176,7 +180,7 @@ main h5 {
 	align-self: center;
 }
 .resumeSubheading {
-	color: var(--orange);
+	color: var(--accent);
 }
 
 /* Work Page */
@@ -191,7 +195,7 @@ main h5 {
 	padding-top: 2em;
 	margin-left: 0em;
 	width: 100vw;
-	background-color: var(--dark);
+	background-color: var(--main);
 }
 .workLearnMore {
 	padding-top: 1em;
@@ -201,21 +205,29 @@ main h5 {
 }
 
 /* Contact Page */
+.contactInfo {
+	padding-top: 2em;
+	text-align: center;
+	font-size: x-large;
+}
 form {
 	text-align: center;
 }
-.button {
-	background: var(--tranOrange);
+.contactButton {
+	background: var(--accent);
+	margin: 0em 3.5em;
 	border: 0px;
 	font-weight: bold;
 	font-size: large;
+	border-radius: 2px;
 	transition: var(--tranTime) ease-in-out;
 }
-.button:hover {
-	background: var(--orange);
+.contactButton:hover {
+	background: var(--tranAccent);
 	border: 0px;
 	font-weight: bold;
 	font-size: large;
+	border-radius: 12px;
 }
 
 
