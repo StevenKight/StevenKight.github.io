@@ -15,7 +15,7 @@ app.component('resume', {
     <div class="accordion">
         <div class="accord-item">
             <h2 class="accord-header" id="headingOne">
-                <button class="accord-button" type="button" @click="toggleSection()">
+                <button class="accord-button" id="resume-button" type="button" @click="toggleSection()">
                     Resume
                     <i class="arrow" :class="{up: resume, down: !resume}"></i>
                 </button>
@@ -95,9 +95,10 @@ app.component('resume', {
             this.resume = !this.resume;
 
             if (this.resume) {
-                window.scrollBy(0, 200);
-            } else {
-                window.scrollBy(0, -200);
+                setTimeout(() => {
+                    var elmntToView = document.getElementById("resume-button");
+                    elmntToView.scrollIntoView();
+                }, 100);
             }
         },
         formatDates(dates) {

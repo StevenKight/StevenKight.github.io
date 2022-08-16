@@ -53,6 +53,9 @@ main a:hover, footer a:hover {
 }
 
 /* Nav bar */
+nav {
+	position: fixed;
+}
 .dark-bg {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -86,6 +89,14 @@ main a:hover, footer a:hover {
 .bg-dark {
 	background-color: var(--main) !important;
 }
+footer {
+	position: fixed;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0em;
+}
 footer div {
 	display: flex;
 	flex-direction: row;
@@ -104,12 +115,17 @@ main h5 {
 	color: rgb(209, 209, 209);
 	padding-bottom: .5em;
 }
+#indexMain {
+	float: left;
+}
 #learnMore {
 	margin-top: 0.5em;
 }
 #index img {
 	border-radius: 50%;
-	margin: 2.5em 10em 0 0;
+	margin: 2.5em 0 4em 6em;
+	height: 400px;
+	width: 366px;
 }
 
 /* About Page */
@@ -123,7 +139,7 @@ main h5 {
 	border-radius: 1em;
 }
 #tools {
-	margin-top: 1em; 
+	margin-top: 5em; 
 	text-align: center;
 }
 #logos a {
@@ -131,6 +147,9 @@ main h5 {
 }
 #logos img {
 	margin-bottom: 1em;
+}
+#collapseResume {
+	margin-bottom: 5em;
 }
 
 /* Resume */
@@ -225,6 +244,12 @@ form {
 	border-radius: 12px;
 }
 
+@media (max-width: 1075px) {
+	#index img {
+		float: none;
+		margin: 0 0 4em 6em;
+	}
+}
 
 @media (min-width: 850px) {
 	#aboutMeFlex, #contactFlex {
@@ -249,7 +274,10 @@ form {
 
 @media (min-width: 575px) {
 	#indexMain {
-		height: 75vh;
+		height: 74vh;
+	}
+	#contactFlex {
+		height: 76vh;
 	}
 }
 
