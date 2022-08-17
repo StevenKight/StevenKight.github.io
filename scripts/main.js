@@ -112,12 +112,12 @@ var app = Vue.createApp({
                 4: {
                     name: "Graphic Design",
                     icon: "./images/work-icons/graphic-design.svg",
-                    link: ""
+                    link: "./graphics.html"
                 },
                 5: {
                     name: "Engineering",
                     icon: "./images/work-icons/engineering.svg",
-                    link: ""
+                    link: "./engineering.html"
                 }
         }
     };

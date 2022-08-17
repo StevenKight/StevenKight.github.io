@@ -24,22 +24,21 @@
 	<body class="box">
 		<div id="app">
 			<header-component work></header-component>
-			<main>
-				<div id="heading">
-					<h1>
-						From <span class="hide">Artificial Intellegence</span> <span class="hidden">AI</span> <br> 
-						systems to small <br> graphic design work.
-					</h1>
-					<h4>
-						I am in the process of expanding upon my abilities and am working on new projects 
-						in some of the below feilds aswell as in other areas of computer science.
-						<br><br>
-					</h4>
-					<h5>Sorted from most recent to oldest below.</h5>
-				</div>
-				<div id="sections">
-					<work-component :work="workFeilds"></work-component>
-				</div>
+			<main id="main">
+				<h1>Engineering Work.</h1>
+
+				<ul>
+					<li>
+						<h4>
+							This page is incomplete
+							<br><br>
+							More information can be found here: &emsp;
+							<a href="#" target="blank">
+								More information
+							</a>
+						</h4>
+					</li>
+				</ul>
 			</main>
 			<footer-component></footer-component>
 		</div>
@@ -59,19 +58,6 @@
 		<!-- Mount App -->
 		<script>
 			const mountedApp = app.mount("#app");
-			
-			const checkpoint = 500;
- 
-			window.addEventListener("scroll", () => {
-				const currentScroll = window.pageYOffset;
-				if (currentScroll <= checkpoint) {
-					opacity = 0 + currentScroll / checkpoint;
-				} else {
-					opacity = 1;
-				}
-				document.querySelector("#sections").style.opacity = opacity;
-			});
-
 		</script>
 
 	</body>
