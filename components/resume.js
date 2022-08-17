@@ -100,6 +100,10 @@ app.component('resume', {
                     elmntToView.scrollIntoView();
                 }, 100);
             }
+            else {
+                var elmntToView = document.getElementById("pageTop");
+                elmntToView.scrollIntoView();
+            }
         },
         formatDates(dates) {
             return dates.start + "-" + dates.end

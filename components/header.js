@@ -19,7 +19,7 @@ app.component('header-component', {
     },
     template: /* html */
     `
-    <header class="dark-bg row header">
+    <header class="dark-bg row header" id="pageTop">
         <navigation :home="home" :about="about" :work="work" :contact="contact"></navigation>
     </header>
     `

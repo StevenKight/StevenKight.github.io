@@ -47,7 +47,7 @@ app.component('navigation', {
                             width="30" alt="email icon"></a>
                     </li>
                     <li id="github">
-                        <a href="#" target="blank">
+                        <a href="https://github.com/StevenKight" target="blank">
                             <img src="./images/social-icons/github.svg" 
                             width="30" alt="github icon"></a>
                     </li>
