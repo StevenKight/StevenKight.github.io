@@ -40,7 +40,7 @@ var app = Vue.createApp({
                     state: "Georgia",
                     zip: "30165"
                 },
-                introduction: "I am a student attending the University of West Georgia. I obtained my Associates of Science in Computer Science from Georgia Highlands college and attending West Georgia for my Bachelor of Science in Computer Science. I am passionate about my research into Artificial Intellegence and in Web Development and Database systems.",
+                introduction: "I am a student attending the University of West Georgia. I obtained my Associates of Science in Computer Science from Georgia Highlands college and attending West Georgia for my Bachelor of Science in Computer Science. I am passionate about my research into Artificial Intelligence and in Web Development and Database systems.",
                 education: {
                     1: {
                         name: "West Georgia",
