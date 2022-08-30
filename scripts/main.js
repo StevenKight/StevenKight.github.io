@@ -9,22 +9,22 @@ var app = Vue.createApp({
                     time: "9:30 AM"
                 },
                 2: {
+                    name: "CS 3201",
+                    instructer: "Duane Yoder",
+                    days: "Tuesday and Thursday",
+                    time: "11:00 AM"
+                },
+                3: {
                     name: "CS 3211",
                     instructer: "Jonathan Corley",
                     days: "Monday and Wednesday",
                     time: "12:30 PM"
                 },
-                3: {
+                4: {
                     name: "CS 4275",
                     instructer: "Ana M. Stanescu",
                     days: "Tuesday and Thursday",
                     time: "2:00 PM"
-                },
-                4: {
-                    name: "ENGL 3405",
-                    instructer: "Crystal R. Shelnutt",
-                    days: "Monday and Wednesday",
-                    time: "5:30 PM"
                 }
             },
             resumeInfo : {

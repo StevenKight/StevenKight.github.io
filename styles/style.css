@@ -1,15 +1,16 @@
 :root {
 	--tranTime: 500ms;
-	--main: #060B0E;
-	--accent: #FCC736;
-	--tranAccent: #FEAD0B;
+	--background: #070F14;
+	--text: #FFFBEF;
+	--accent: #FFA25B;
+	--tranAccent: #FF6F00;
 }
 
 /* Same on all pages */
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: var(--main);
+	background-color: var(--background);
 }
 header, main {
 	padding: 0.5em 5em;
@@ -18,7 +19,7 @@ footer {
 	padding: 1em 5em;
 }
 main {
-	color: white;
+	color: var(--text);
 	padding-bottom: -16px;
 }
 #main {
@@ -43,13 +44,13 @@ main a, footer a {
 	transition: var(--tranTime) ease-in-out;
 }
 main a:hover, footer a:hover {
-	color: var(--accent);
+	color: var(--tranAccent);
 	text-decoration: underline;
 	text-underline-offset: 0.4em;
 
-	text-decoration-color: var(--accent);
-	-webkit-text-decoration-color: var(--accent);
-	-moz-text-decoration-color: var(--accent);
+	text-decoration-color: var(--tranAccent);
+	-webkit-text-decoration-color: var(--tranAccent);
+	-moz-text-decoration-color: var(--tranAccent);
 }
 
 /* Nav bar */
@@ -87,7 +88,7 @@ nav {
 
 /* Footer */
 .bg-dark {
-	background-color: var(--main) !important;
+	background-color: var(--background) !important;
 }
 footer {
 	position: fixed;
@@ -154,12 +155,12 @@ main h5 {
 
 /* Resume */
 .btn-primary {
-	background-color: white;
-	border: 1px solid var(--main);
+	background-color: var(--text);
+	border: 1px solid var(--background);
 }
 .accord-button {
-	background-color: var(--main); /* #efefef;*/
-	color: white;
+	background-color: var(--background); /* #efefef;*/
+	color: var(--text);
 }
 .arrow {
   	border: solid var(--accent);
@@ -209,7 +210,7 @@ main h5 {
 	padding-top: 2em;
 	margin-left: 0em;
 	width: 100vw;
-	background-color: var(--main);
+	background-color: var(--background);
 }
 .workLearnMore {
 	padding-top: 1em;
@@ -249,6 +250,18 @@ form {
 		float: none;
 		margin: 0 0 4em 6em;
 	}
+	footer div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	footer {
+		position: fixed;
+		height: 125px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	}
 }
 
 @media (min-width: 850px) {
@@ -256,7 +269,6 @@ form {
 		display: flex;
 		flex-direction: row;
 	}
-
 	#contactFlex {
 		justify-content: space-around;
 	}
