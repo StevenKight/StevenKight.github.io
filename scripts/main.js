@@ -3,19 +3,19 @@ var app = Vue.createApp({
         return {
             classes: {
                 1: {
-                    name: "CS 3202 - Program Construction II",
+                    name: "Program Construction II",
                     instructer: "Duane Yoder",
                     days: "Tuesday and Thursday",
                     time: "11:00 AM"
                 },
                 3: {
-                    name: "CS 3212 - Software Engineering II",
+                    name: "Software Engineering II",
                     instructer: "Jonathan Corley",
                     days: "Monday and Wednesday",
                     time: "12:30 PM"
                 },
                 4: {
-                    name: "Math 4203 - Mathematical Probability",
+                    name: "Mathematical Probability",
                     instructer: "Fengrong Wei",
                     days: "Tuesday and Thursday",
                     time: "3:30 PM"
@@ -37,7 +37,7 @@ var app = Vue.createApp({
                 introduction: "I am a student attending the University of West Georgia. I obtained my Associates of Science in Computer Science from Georgia Highlands college and attending West Georgia for my Bachelor of Science in Computer Science. I am passionate about my research into Artificial Intelligence and in Web Development and Database systems.",
                 education: {
                     1: {
-                        name: "West Georgia",
+                        name: "University of West Georgia",
                         degree: "Bachelor of Science in Computer Science",
                         minor: "Mathematics",
                         concentration: "Data Science",
@@ -65,7 +65,7 @@ var app = Vue.createApp({
                 },
                 experience: {
                     1: {
-                        buisness: "West Georgia",
+                        buisness: "University of West Georgia",
                         url: "https://www.westga.edu/",
                         title: "Student Assistant",
                         dates: {
