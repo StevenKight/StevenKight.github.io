@@ -3,28 +3,22 @@ var app = Vue.createApp({
         return {
             classes: {
                 1: {
-                    name: "CS 3152",
-                    instructer: "Anja Remshagen",
-                    days: "Tuesday and Thursday",
-                    time: "9:30 AM"
-                },
-                2: {
-                    name: "CS 3201",
+                    name: "CS 3202 - Program Construction II",
                     instructer: "Duane Yoder",
                     days: "Tuesday and Thursday",
                     time: "11:00 AM"
                 },
                 3: {
-                    name: "CS 3211",
+                    name: "CS 3212 - Software Engineering II",
                     instructer: "Jonathan Corley",
                     days: "Monday and Wednesday",
                     time: "12:30 PM"
                 },
                 4: {
-                    name: "CS 4275",
-                    instructer: "Ana M. Stanescu",
+                    name: "Math 4203 - Mathematical Probability",
+                    instructer: "Fengrong Wei",
                     days: "Tuesday and Thursday",
-                    time: "2:00 PM"
+                    time: "3:30 PM"
                 }
             },
             resumeInfo : {
@@ -45,6 +39,8 @@ var app = Vue.createApp({
                     1: {
                         name: "West Georgia",
                         degree: "Bachelor of Science in Computer Science",
+                        minor: "Mathematics",
+                        concentration: "Data Science",
                         dates: {
                             start: "2022",
                             end: "2024"
@@ -69,6 +65,15 @@ var app = Vue.createApp({
                 },
                 experience: {
                     1: {
+                        buisness: "West Georgia",
+                        url: "https://www.westga.edu/",
+                        title: "Student Assistant",
+                        dates: {
+                            start: "August 2020",
+                            end: "Present"
+                        }
+                    },
+                    2: {
                         buisness: "RST LLC",
                         url: "https://www.rsttruckrepair.com/",
                         title: "Mechanic / Systems Improvement",
@@ -77,7 +82,7 @@ var app = Vue.createApp({
                             end: "July 2021"
                         }
                     },
-                    2: {
+                    3: {
                         buisness: "Six Mile Post",
                         url: "https://sixmilepost.com/",
                         title: "Graphic Designer",
@@ -121,11 +126,5 @@ var app = Vue.createApp({
                 }
         }
     };
-    },
-    methods: {
-
-    },
-    calculated: {
-        
     }
 })

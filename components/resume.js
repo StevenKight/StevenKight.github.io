@@ -44,6 +44,8 @@ app.component('resume', {
                             </div>
                             <div class="col">
                                 <h5>{{ degree.degree }}</h5>
+                                <h6 v-if="degree.minor">- Minor in {{ degree.minor }}</h6>
+                                <h6 v-if="degree.concentration">- Concentration in {{ degree.concentration }}</h6>
                             </div>
                             <div class="col">
                                 <h5>{{ formatDates(degree.dates) }}</h5>
@@ -85,6 +87,9 @@ app.component('resume', {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <h3><a href="./images/pdfs/Resume.pdf" target="_blank">Full Resume</a></h5>
+                    </div>
                 </div> 
             </div>
         </div> 
@@ -96,7 +101,7 @@ app.component('resume', {
 
             if (this.resume) {
                 setTimeout(() => {
-                    var elmntToView = document.getElementById("resume-button");
+                    var elmntToView = document.getElementById("collapseResume");
                     elmntToView.scrollIntoView();
                 }, 100);
             }

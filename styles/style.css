@@ -1,7 +1,7 @@
 :root {
 	--tranTime: 500ms;
 	--background: #070F14;
-	--text: #FFFBEF;
+	--text: #ffffff;
 	--accent: #FFA25B;
 	--tranAccent: #FF6F00;
 }
@@ -41,7 +41,7 @@ main a, footer a {
 	text-decoration: underline;
  	text-decoration-color: transparent;
 	text-underline-offset: 0.4em;
-	transition: var(--tranTime) ease-in-out;
+	transition: 500ms ease-in-out;
 }
 main a:hover, footer a:hover {
 	color: var(--tranAccent);
@@ -112,7 +112,7 @@ main h1 {
 	margin: 0.5em 0;
 	font-size: 4em;
 }
-main h5 {
+main h5, main h6 {
 	color: rgb(209, 209, 209);
 	padding-bottom: .5em;
 }
