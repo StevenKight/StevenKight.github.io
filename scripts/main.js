@@ -3,22 +3,10 @@ var app = Vue.createApp({
         return {
             classes: {
                 1: {
-                    name: "Program Construction II",
-                    instructer: "Duane Yoder",
-                    days: "Tuesday and Thursday",
-                    time: "11:00 AM"
-                },
-                3: {
-                    name: "Software Engineering II",
-                    instructer: "Jonathan Corley",
-                    days: "Monday and Wednesday",
-                    time: "12:30 PM"
-                },
-                4: {
-                    name: "Mathematical Probability",
-                    instructer: "Fengrong Wei",
-                    days: "Tuesday and Thursday",
-                    time: "3:30 PM"
+                    name: "",
+                    instructer: "",
+                    days: "",
+                    time: ""
                 }
             },
             resumeInfo : {
@@ -67,13 +55,22 @@ var app = Vue.createApp({
                     1: {
                         buisness: "University of West Georgia",
                         url: "https://www.westga.edu/",
-                        title: "Student Assistant",
+                        title: "Software Developer Intern",
                         dates: {
-                            start: "August 2020",
+                            start: "May 2023",
                             end: "Present"
                         }
                     },
-                    2: {
+                    3: {
+                        buisness: "University of West Georgia",
+                        url: "https://www.westga.edu/",
+                        title: "Student Assistant",
+                        dates: {
+                            start: "August 2020",
+                            end: "May 2023"
+                        }
+                    },
+                    4: {
                         buisness: "RST LLC",
                         url: "https://www.rsttruckrepair.com/",
                         title: "Mechanic / Systems Improvement",
@@ -82,7 +79,7 @@ var app = Vue.createApp({
                             end: "July 2021"
                         }
                     },
-                    3: {
+                    5: {
                         buisness: "Six Mile Post",
                         url: "https://sixmilepost.com/",
                         title: "Graphic Designer",
@@ -93,8 +90,8 @@ var app = Vue.createApp({
                     }
                 },
                 skills: [
-                    "Programming/Markup Languages: Python, C++, Java, HTML, CSS, JavaScript", 
-                    "Database Management: MySQL, Access",
+                    "Programming/Markup Languages: Python, C++, Java, HTML, CSS, JavaScript, React, Vue, React Native, ASP.Net", 
+                    "Database Management: MySQL, Access, PostgreSQL",
                     "Graphics: Illustrator, InDesign"
                 ]
             },
