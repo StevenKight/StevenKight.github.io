@@ -13,13 +13,14 @@ app.component('aside-component', {
             required: false
         }
     },
+    // {{ item.name }} at {{ item.time }} on {{ item.days }} with {{ item.instructer }} TODO: Replace on line 23
     template: /* html */
     `
     <aside>
         <div id="classes" style="text-align: center;">
-            <h4 class="mb-4">Spring 2023 Class Schedule:</h4>
+            <h4 class="mb-4">Summer 2023 Class Schedule:</h4>
             <h5 style="color: white;" v-for="item in classes">
-                {{ item.name }} at {{ item.time }} on {{ item.days }} with {{ item.instructer }}
+                No current classes
             </h5>
         </div>
         <div v-if="contact" class="contactInfo">
