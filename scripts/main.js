@@ -3,22 +3,22 @@ var app = Vue.createApp({
         return {
             classes: {
                 1: {
-                    name: "Program Construction II",
-                    instructer: "Duane Yoder",
-                    days: "Tuesday and Thursday",
-                    time: "11:00 AM"
+                    name: "Systems Programming",
+                    instructer: "Raihan",
+                    days: "Monday and Wednesday",
+                    time: "9:30 AM"
                 },
                 3: {
-                    name: "Software Engineering II",
-                    instructer: "Jonathan Corley",
+                    name: "Information Management",
+                    instructer: "Li Yang",
                     days: "Monday and Wednesday",
                     time: "12:30 PM"
                 },
                 4: {
-                    name: "Mathematical Probability",
+                    name: "Regression Analysis",
                     instructer: "Fengrong Wei",
                     days: "Tuesday and Thursday",
-                    time: "3:30 PM"
+                    time: "9:30 PM"
                 }
             },
             resumeInfo : {
@@ -67,13 +67,22 @@ var app = Vue.createApp({
                     1: {
                         buisness: "University of West Georgia",
                         url: "https://www.westga.edu/",
-                        title: "Student Assistant",
+                        title: "Student Developer (Intern)",
                         dates: {
-                            start: "August 2020",
+                            start: "May 2021",
                             end: "Present"
                         }
                     },
                     2: {
+                        buisness: "University of West Georgia",
+                        url: "https://www.westga.edu/",
+                        title: "Student Assistant",
+                        dates: {
+                            start: "August 2020",
+                            end: "May 2021"
+                        }
+                    },
+                    3: {
                         buisness: "RST LLC",
                         url: "https://www.rsttruckrepair.com/",
                         title: "Mechanic / Systems Improvement",
@@ -82,7 +91,7 @@ var app = Vue.createApp({
                             end: "July 2021"
                         }
                     },
-                    3: {
+                    4: {
                         buisness: "Six Mile Post",
                         url: "https://sixmilepost.com/",
                         title: "Graphic Designer",
@@ -93,9 +102,9 @@ var app = Vue.createApp({
                     }
                 },
                 skills: [
-                    "Programming/Markup Languages: Python, C++, Java, HTML, CSS, JavaScript", 
+                    "Programming/Markup Languages: Python, Java, HTML, CSS, JavaScript, MySQL, C#, C++, Tensorflow, SciKitLearn, React, ReactNative, ASP.Net, Rust, PostgreSQL, Machine Learning,MatLab", 
                     "Database Management: MySQL, Access",
-                    "Graphics: Illustrator, InDesign"
+                    "Graphics: Illustrator, InDesign, Photoshop, GIMP, OnShape, Fusion360",
                 ]
             },
             workFeilds: {
@@ -105,14 +114,14 @@ var app = Vue.createApp({
                     link: "./ai.html"
                 },
                 2: {
-                    name: "Web Development",
-                    icon: "./images/work-icons/web-development.svg",
-                    link: "./websites.html"
-                },
-                3: {
                     name: "Database",
                     icon: "./images/work-icons/database.svg",
                     link: "./database.html"
+                },
+                3: {
+                    name: "Web Development",
+                    icon: "./images/work-icons/web-development.svg",
+                    link: "./websites.html"
                 },
                 4: {
                     name: "Graphic Design",

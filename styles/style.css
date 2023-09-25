@@ -245,6 +245,13 @@ form {
 	border-radius: 12px;
 }
 
+/* Work pages */
+.work-list li {
+	margin-bottom: 2em;
+	border-bottom: solid 1px var(--accent);
+}
+
+/* Media Queries */
 @media (max-width: 1075px) {
 	#index img {
 		float: none;
@@ -254,13 +261,6 @@ form {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-	}
-	footer {
-		position: fixed;
-		height: 125px;
-		bottom: 0px;
-		left: 0px;
-		right: 0px;
 	}
 }
 
@@ -333,6 +333,9 @@ form {
 	#tools {
 		margin-top: -1.5em;
 	}
+	#aboutMe {
+		margin-bottom: 3em;
+	}
 
 	/* Work Page */
     #heading {
@@ -342,7 +345,21 @@ form {
 }
 
 @media (max-width: 400px) {
+
+	#app {
+		height: fit-content;
+	}
+	
 	#sections {
 		margin-top: -15em;
+	}
+
+	/* Index Page */
+	#indexMain {
+		font-size: small;
+	}
+
+	#index img {
+		display: none;
 	}
 }

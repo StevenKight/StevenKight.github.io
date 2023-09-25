@@ -88,7 +88,7 @@ app.component('resume', {
                         </div>
                     </div>
                     <div>
-                        <h3><a href="./images/pdfs/Resume.pdf" target="_blank">Full Resume</a></h5>
+                        <h3><a href="./images/pdfs/Full Resume.pdf" target="_blank">Full Resume</a></h5>
                     </div>
                 </div> 
             </div>
