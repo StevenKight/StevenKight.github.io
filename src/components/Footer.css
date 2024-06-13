@@ -1,0 +1,12 @@
+.FooterBar {
+    background-color: var(--background);
+    text-align: center;
+	padding: 0.5em 1em;
+    color: var(--text);
+    display: flex;
+}
+
+.FooterCenter {
+    width: 100%;
+    text-align: center;
+}

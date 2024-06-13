@@ -1,0 +1,88 @@
+.NavBar {
+    background-color: var(--darker-background);
+    text-align: center;
+	padding: 0.5em 1em 0.5em 2.5em;
+    color: var(--text);
+    display: flex;
+}
+
+.NavBarLeft {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.NavBarHeader a {
+    color: var(--text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.NavBarLinks {
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.NavBarLinks * {
+    margin: 0 0.25em;
+}
+
+.NavBarLinks a {
+	color: var(--accent);
+	text-decoration: underline;
+ 	text-decoration-color: transparent;
+	text-underline-offset: 0.4em;
+	transition: 500ms ease-in-out;
+  	cursor: pointer;
+}
+
+.NavBarLinks a:hover {
+	color: var(--tranAccent);
+	text-decoration: underline;
+	text-underline-offset: 0.4em;
+
+	text-decoration-color: var(--tranAccent);
+	-webkit-text-decoration-color: var(--tranAccent);
+	-moz-text-decoration-color: var(--tranAccent);
+}
+
+.NavBarLinks a.active {
+	color: var(--tranAccent);
+	text-decoration: underline;
+	text-underline-offset: 0.4em;
+}
+
+.NavBarRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.NavBarRight * {
+    margin: 0 0.5em;
+}
+
+.NavBarRight img {
+    width: 2em;
+    height: 2em;
+}
+
+@media (max-width: 500px) {
+    .NavBarRight {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .NavBarRight * {
+        margin: 0 0.25em;
+    }
+
+    .NavBarRight img {
+        width: 2em;
+        height: 2em;
+    }
+}
