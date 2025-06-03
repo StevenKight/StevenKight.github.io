@@ -1,0 +1,46 @@
+
+.section {
+    scroll-margin-top: 125px;
+}
+
+.section-header {
+    width: 10%;
+    position: relative;
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+    border-top: solid 5px black;
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    background: var(--background);
+    margin: 0 0 0 2.5%;
+    padding: 0.5em 1em;
+    z-index: 501;
+}
+
+.section-header:after {
+    content: "";
+    background: var(--background);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.section-body {
+    height: fit-content;
+    background: var(--background);
+    position: relative;
+    border-top: solid 5px black;
+    padding: 2em 2em 6em 2em;
+    z-index: 500;
+}
+
+.section-body.heading {
+    border: none;
+    padding: 2em;
+}
+
+.section-header h2 {
+    margin: 0 !important;
+}

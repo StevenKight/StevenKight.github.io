@@ -1,0 +1,19 @@
+:root {
+	--tranTime: 500ms;
+	--background: #fffdf9; /* #070F14 */
+	--text: #0C0F15;
+	--accent: #e77f67;
+	--tran-accent: #e15f41;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,36 +1,50 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import React from 'react';
+
+import { 
+  faHouse, faIdBadge, 
+  faCode, faTableList, faAddressBook
+} from '@fortawesome/free-solid-svg-icons';
 
 import NavBar from './components/NavBar';
+import Section from './components/Section';
 import Footer from './components/Footer';
 
-import Main from './pages/Main';
+import Home from './pages/Home';
 import About from './pages/About';
+import Skills from './pages/Skills';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
-import './App.css';
+import './styles/App.css';
 
 function App() {
+
   return (
-    <BrowserRouter>
-      <div className="App">
-        <div className="Nav">
-          <NavBar />
-        </div>
-  
-        <div className="Content">
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/works" element={<Projects />} />
-            <Route path="/works/:work" element={<Projects />} />
-          </Routes>
-        </div>
-  
-        <div className="Footer">
-          <Footer />
-        </div>
+    <div className="App">
+      <NavBar />
+
+      <div style={{ width: '100%'}}>
+        <Section icon={faHouse} title="Home" disableHeader>
+          <Home />
+        </Section>
+        <Section icon={faIdBadge} title="About"
+          disableOverlap className="about-section">
+          <About />
+        </Section>
+        <Section icon={faCode} title="Skills">
+          <Skills />
+        </Section>
+        <Section icon={faTableList} title="Projects" className="projects-section">
+          <Projects />
+        </Section>
+        <Section icon={faAddressBook} title="Contact">
+          <Contact />
+        </Section>
       </div>
-    </BrowserRouter>
+
+      <Footer />
+    </div>
   );
 }
 

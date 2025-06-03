@@ -1,0 +1,14 @@
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-icons a img {
+  width: 35px;
+  pointer-events: all;
+  cursor: pointer;
+  -webkit-filter: invert(100%); /* Safari & Chrome */
+  filter: invert(100%) drop-shadow(3px 3px rgb(200, 200, 200));
+}

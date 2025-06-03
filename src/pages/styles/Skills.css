@@ -1,0 +1,43 @@
+.skills {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.skills-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.skills-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.skills-group {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 1em 10em;
+}
+
+.skills-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+@media (max-width: 992px) {
+    .skill-wrapper:not(.always-show):nth-child(n + 6) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-wrapper:not(.always-show):nth-child(n + 4) {
+        display: none;
+    }
+}

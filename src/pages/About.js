@@ -1,101 +1,31 @@
-import { useNavigate } from 'react-router-dom';
 
-import './About.css';
+import React from 'react';
 
-export default function About() {
-
-    const navigate = useNavigate();
-
-    function handleNavigation(e, destination) {
-        e.preventDefault();
-        
-        navigate(destination);
-    }
-
+function About() {
     return (
-        <div className="About">
-            <div className="AboutHeader">
-                <h1>
-                    About Me
-                </h1>
-            </div>
-            <div className="AboutContent">
-                <div className="AboutContentLeft">
-                    <p>
-                        Hello there! My name is Steven Kight. <br/>
-                        <br/>
-                        I am a software developer with a passion in research. 
-                        I have a background in Computer Science, Mathematics, and Physics working on research in
-                        Artificial Intelligence and Simulations.
-                        I also have experience and enjoy work in Web Development and Database systems.
-                        <br/><br/>
-                        I obtained my Associates of Science in Computer Science from <strong>Georgia Highlands College</strong> and 
-                        obtained my Bachelor's of Science in Computer Science from the <strong>University of West Georgia</strong>.
-                        <br/><br/>
-                        I also have a background in Graphic Design with newspapers and smaller projects
-                        around my hometown of Rome, Georgia after completing the Adobe Illustrator certification in 2019.
-                        <br/><br/>
-                        Want to see more? &nbsp;
-                        <a onClick={(evt) => handleNavigation(evt, "/works")}>
-                            Check out some of my work
-                        </a>.
-                    </p>
-                </div>
-                <div className="AboutContentRight">
-                    <h3>Tools I Love Using:</h3>
-                    <div className="AboutContentLogos">
-                        <a href="https://www.python.org/" target="blank">
-                            <img class="img-fluid" src="/assets/images/logos/python.png" alt="Python logo" 
-                                width="60" />
-                        </a>
+        <div>
+            <p>Hi, I'm <strong>Steven Kight</strong>—a software engineer with a keen interest in data science, artificial intelligence, and physics simulations. If it involves solving complex problems with code (and ideally some matrix math), I'm probably into it.</p>
 
-                        <a>
-                            <img class="img-fluid rounded" src="/assets/images/logos/ISO_C++_Logo.svg" alt="C/C++ logo" 
-                                width="70" />
-                        </a>
+            <p>I began my journey as a physics major, captivated by the elegance of physical laws and the creativity of design. My passion for graphics, computers, and exploring how things work led me to a pivotal encounter with a professor who opened the door to computer science. That moment sent me on a new trajectory to the University of West Georgia, where I dove deep into software development and research—particularly in AI and simulations.</p>
 
-                        <a href="https://www.tensorflow.org/" target="blank">
-                            <img class="img-fluid" src="/assets/images/logos/tensorflow.png" alt="Tensorflow logo" 
-                                width="60" />
-                        </a>
+            <p>Since then, I've built experience across a wide range of technical areas: REST API development, database design, web development, automation engineering, and of course, my first love—AI. Currently, I work as an <strong>Automation Engineer</strong>, where I continue to sharpen my skills while always keeping an eye on the broader horizon of intelligent systems.</p>
 
-                        <a href="https://keras.io/" target="blank">
-                            <img class="img-fluid" src="/assets/images/logos/keras.png" alt="Keras logo" 
-                                width="60" />
-                        </a>
+            <p>My academic and professional pursuits have given me the chance to collaborate across disciplines—working with departments like English, Physics, and Chemistry on research that blends technical rigor with human context. Some highlights include:</p>
+            
+            <ul>
+                <li>
+                A <strong>campus smart assistant</strong>, built around multi-modal learning using face, voice, and class schedule data. I presented this work at multiple conferences, including the Georgia Undergraduate Research Conference.
+                </li>
+                <li>
+                <strong>Nuclear reactor simulation research</strong>, focusing on practical reactor usage. For this project, I teamed up with physics and chemistry faculty to explore real-world applications of theoretical models.
+                </li>
+            </ul>
 
-                        <a>
-                            <img class="img-fluid" src="/assets/images/logos/web.png" alt="HTML CSS and JavaScript logos" 
-                                width="140" height="75"/>
-                        </a>
+            <p>I'm deeply motivated by a <strong>love of learning</strong>—it's the thread that connects all my work. Whether it's the latest in machine learning or a new trick in CAD modeling, I'm probably reading about it, building it, or breaking it to see how it ticks.</p>
 
-                        <a href="https://pandas.pydata.org/" target="blank">
-                            <img class="img-fluid rounded" src="/assets/images/logos/pandas.png" alt="Pandas logo" 
-                                width="60" />
-                        </a>
-
-                        <a href="https://matplotlib.org/" target="blank">
-                            <img class="img-fluid" src="/assets/images/logos/matplotlib.svg" alt="Matplotlib logo" 
-                                width="140" />
-                        </a>
-
-                        <a>
-                            <img class="img-fluid" src="/assets/images/logos/sql.png" alt="SQL logo" 
-                                width="70" height="75" />
-                        </a>
-
-                        <a href="https://www.mysql.com/" target="blank">
-                            <img class="img-fluid" src="/assets/images/logos/mysql.svg" alt="MySQL logo" 
-                                width="160" />
-                        </a>
-
-                        <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="blank">
-                            <img class="img-fluid" src="/assets/images/logos/excel.png" alt="Excel logo" 
-                                width="60" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <p>If you're into AI, simulation, or just think debugging is a personality trait, we might just get along.</p>
         </div>
     );
 }
+
+export default About;

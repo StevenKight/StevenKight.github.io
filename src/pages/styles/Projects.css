@@ -1,0 +1,27 @@
+.projects {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.projects-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.projects-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 5%));
+    width: 100%;
+    padding: 2em 0;
+}
+
+@media (max-width: 1275px) {
+    .project-card:nth-child(n + 4) {
+        display: none;
+    }
+}

@@ -1,0 +1,53 @@
+
+.navbar {
+    position: fixed;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 3em;
+    z-index: 1000;
+    background-color: var(--background);
+    border-radius: 0px 0px 25px 25px;
+    border-left: solid 5px transparent;
+    border-bottom: solid 4px transparent;
+    border-right: solid 5px transparent;
+	transition: all 250ms ease-in-out;
+}
+
+.navbar.border {
+    border-color: black;
+}
+
+.navbar div {
+    width: 25%;
+}
+
+#pages {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0.125em 1.5em;
+    }
+    #pages {
+        width: 75%;
+    }
+}
+
+@media (max-width: 875px) {
+    #pages {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar div {
+        width: 50%;
+    }
+}

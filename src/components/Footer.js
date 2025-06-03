@@ -1,13 +1,20 @@
-import './Footer.css';
 
-export default function Footer() {
-    return (
-        <div className="FooterBar">
-            <div className="FooterCenter">
-                <p>
-                    &copy; Copyright 2022 Steven Kight
-                </p>
-            </div>
-        </div>
-    );
+import React from 'react';
+
+import SocialIcons from './SocialIcons';
+
+import './styles/Footer.css';
+
+function Footer() {
+  return (
+    <div id='footer'>
+        <p>
+          Copyright &copy; {new Date().getFullYear()} Steven Kight. All rights reserved.
+        </p>
+        
+        <SocialIcons />
+    </div>
+  );
 }
+
+export default Footer;

@@ -1,0 +1,47 @@
+/* styles.css */
+.homepage {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.highlight {
+    color: var(--tran-accent);
+}
+
+.animated-title {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+    height: 2rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.buttons a {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--accent);
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.3s, border-color 0.3s;
+}
+
+.buttons a:hover {
+    background: var(--text);
+    color: var(--background);
+    border-color: var(--tran-accent);
+}

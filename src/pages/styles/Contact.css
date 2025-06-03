@@ -1,0 +1,30 @@
+.contact-container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  text-align: center;
+}
+
+.contact-text,
+.contact-links,
+.contact-email {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+  transition: all 0.3s;
+}
+
+.contact-container a:hover {
+  color: var(--tran-accent);
+  border-color: var(--tran-accent);
+  border-bottom: 1px solid var(--tran-accent);
+  font-size: larger;
+}
