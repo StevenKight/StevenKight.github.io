@@ -1,7 +1,6 @@
 .project-card {
     padding: 1em 2em;
-    margin: 0em 5em;
-    height: 300px;
+    height: fit-content;
     border-radius: 10px;
     border: solid 2px var(--text);
     color: var(--text);
@@ -9,7 +8,6 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    justify-content: space-between;
     background: white;
     text-decoration: none;
     filter: drop-shadow(5px 5px 0px var(--text));
@@ -29,6 +27,16 @@
 
 .project-card h2 {
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin: 0.25em 0;
+}
+
+@media (max-width: 775px) {
+    .project-card {
+        width: 50%;
+    }
+
+    .project-card:hover {
+        transform: none;
+    }
 }

@@ -8,13 +8,13 @@ import './styles/Section.css';
 function Section({ 
     icon, title, className,
     disableHeader = false, disableOverlap = false, 
-    children 
+    disableFooter = false, children 
 }) {
 
     return (
         <div className={`section ${className}`} id={title}
             style={{
-                marginTop: !(disableHeader || disableOverlap) ? '-3.5em' : ''
+                marginTop: !(disableHeader || disableOverlap) ? '-9.5em' : ''
             }}>
             {
                 !disableHeader ? 
@@ -26,7 +26,10 @@ function Section({
                     </div> 
                     : undefined
             }
-            <div className={!disableHeader ? 'section-body' : 'section-body heading'}>
+            <div className={!disableHeader ? 'section-body' : 'section-body heading'}
+                style={{
+                    paddingBottom: disableFooter ? '0' : '10em',
+                }}>
                 { children }
             </div>
         </div>

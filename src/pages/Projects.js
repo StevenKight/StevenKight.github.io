@@ -15,21 +15,19 @@ function Projects() {
     
     return (
         <div className='projects'>
-            <div className='projects-container'>
-                <div className='projects-content'>
-                    {
-                        ProjectsList.map((skill) => {
-                            return (
-                                <ProjectCard 
-                                    img_path={skill.img_path} 
-                                    title={skill.title} 
-                                    description={skill.description} 
-                                    url={skill.url}
-                                    />
-                            );
-                        })
-                    }
-                </div>
+            <div className='projects-content'>
+                {
+                    ProjectsList.map((skill) => {
+                        return (
+                            <ProjectCard 
+                                img_path={skill.img_path} 
+                                title={skill.title} 
+                                description={skill.description} 
+                                url={skill.url}
+                                />
+                        );
+                    })
+                }
             </div>
         </div>
     );

@@ -38,7 +38,7 @@ function App() {
         <Section icon={faTableList} title="Projects" className="projects-section">
           <Projects />
         </Section>
-        <Section icon={faAddressBook} title="Contact">
+        <Section icon={faAddressBook} title="Contact" disableFooter>
           <Contact />
         </Section>
       </div>

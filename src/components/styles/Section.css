@@ -5,6 +5,7 @@
 
 .section-header {
     width: 10%;
+    min-width: 125px;
     position: relative;
     text-align: center;
     border-radius: 25px 25px 0px 0px;
@@ -32,7 +33,7 @@
     background: var(--background);
     position: relative;
     border-top: solid 5px black;
-    padding: 2em 2em 6em 2em;
+    padding: 2em;
     z-index: 500;
 }
 

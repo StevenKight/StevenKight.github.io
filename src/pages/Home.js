@@ -12,7 +12,6 @@ const TITLES = [
     "Machine Learning Developer",
     "AI Researcher",
     "High-Performance Computing Enthusiast",
-    "Technical Problem Solver",
 ]
 
 function Home() {
