@@ -25,20 +25,27 @@ function App() {
       <NavBar />
 
       <div style={{ width: '100%'}}>
-        <Section icon={faHouse} title="Home" disableHeader>
+        <Section icon={faHouse} title="Home" 
+          disableHeader disableFooter
+          >
           <Home />
         </Section>
         <Section icon={faIdBadge} title="About"
-          disableOverlap className="about-section">
+          disableOverlap className="about-section"
+          >
           <About />
         </Section>
         <Section icon={faCode} title="Skills">
           <Skills />
         </Section>
-        <Section icon={faTableList} title="Projects" className="projects-section">
+        <Section icon={faTableList} title="Projects" 
+          className="projects-section"
+          >
           <Projects />
         </Section>
-        <Section icon={faAddressBook} title="Contact" disableFooter>
+        <Section icon={faAddressBook} title="Contact" 
+          disableFooter
+          >
           <Contact />
         </Section>
       </div>

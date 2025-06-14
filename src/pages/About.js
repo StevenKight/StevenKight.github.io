@@ -3,27 +3,48 @@ import React from 'react';
 
 function About() {
     return (
-        <div>
-            <p>Hi, I'm <strong>Steven Kight</strong>—a software engineer with a keen interest in data science, artificial intelligence, and physics simulations. If it involves solving complex problems with code (and ideally some matrix math), I'm probably into it.</p>
+        <div className='about-container'>
+            <p>
+                Hi, I'm Steven Kight — a software engineer driven by a passion for AI, physics simulations, and solving complex problems with elegant code 
+                (ideally involving a bit of matrix math).
+            </p>
 
-            <p>I began my journey as a physics major, captivated by the elegance of physical laws and the creativity of design. My passion for graphics, computers, and exploring how things work led me to a pivotal encounter with a professor who opened the door to computer science. That moment sent me on a new trajectory to the University of West Georgia, where I dove deep into software development and research—particularly in AI and simulations.</p>
+            <p>
+                I originally set out as a physics major, drawn to the beauty of physical laws and the creativity of design. 
+                A chance conversation with a professor sparked my shift to computer science, setting me on a path to the University of West Georgia, 
+                where I focused on software development, intelligent systems, and research-driven projects.
+            </p>
 
-            <p>Since then, I've built experience across a wide range of technical areas: REST API development, database design, web development, automation engineering, and of course, my first love—AI. Currently, I work as an <strong>Automation Engineer</strong>, where I continue to sharpen my skills while always keeping an eye on the broader horizon of intelligent systems.</p>
+            <p>
+                Since then, I've worked across diverse areas: REST APIs, database design, web development, automation engineering, and — always — artificial intelligence. 
+                Most recently, I've held roles as an AI Engineer and Automation Engineer, building production-ready systems and deploying solutions on 
+                cloud-native infrastructure.
+            </p>
 
-            <p>My academic and professional pursuits have given me the chance to collaborate across disciplines—working with departments like English, Physics, and Chemistry on research that blends technical rigor with human context. Some highlights include:</p>
-            
+            <p>
+                I thrive at the intersection of disciplines, collaborating with teams in English, Physics, and Chemistry to bridge technical rigor with real-world impact. 
+                A few highlights:
+            </p>
             <ul>
                 <li>
-                A <strong>campus smart assistant</strong>, built around multi-modal learning using face, voice, and class schedule data. I presented this work at multiple conferences, including the Georgia Undergraduate Research Conference.
+                    <strong>Campus Smart Assistant: </strong> 
+                    An AI-driven tool using facial and voice recognition to help students manage class schedules, 
+                    presented at the Georgia Undergraduate Research Conference and other venues.
                 </li>
                 <li>
-                <strong>Nuclear reactor simulation research</strong>, focusing on practical reactor usage. For this project, I teamed up with physics and chemistry faculty to explore real-world applications of theoretical models.
+                    <strong>Physics Research &amp; Application Development: </strong> 
+                    Partnered with faculty to explore and apply complex physics models in software, blending theory and practical implementation.
                 </li>
             </ul>
 
-            <p>I'm deeply motivated by a <strong>love of learning</strong>—it's the thread that connects all my work. Whether it's the latest in machine learning or a new trick in CAD modeling, I'm probably reading about it, building it, or breaking it to see how it ticks.</p>
+            <p>
+                Continuous learning is my driving force — whether it's the latest in machine learning or a new trick in CAD modeling, 
+                I'm probably building it, testing it, or breaking it apart to see how it works.
+            </p>
 
-            <p>If you're into AI, simulation, or just think debugging is a personality trait, we might just get along.</p>
+            <p>
+                If you're passionate about AI, simulation, or think debugging is a personality trait, we'll probably get along.
+            </p>
         </div>
     );
 }

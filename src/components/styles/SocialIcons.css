@@ -11,4 +11,11 @@
   cursor: pointer;
   -webkit-filter: invert(100%); /* Safari & Chrome */
   filter: invert(100%) drop-shadow(3px 3px rgb(200, 200, 200));
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+  -webkit-filter: invert(0%); /* Safari & Chrome */
+  transform: scale(1.1);
+  filter: invert(50%) drop-shadow(3px 3px rgb(200, 200, 200));
 }

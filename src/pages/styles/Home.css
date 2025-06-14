@@ -15,6 +15,13 @@
 
 .highlight {
     color: var(--tran-accent);
+    transition: all 0.3s ease-in-out;
+}
+
+.highlight:hover {
+    font-size: 110%;
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 .animated-title {
