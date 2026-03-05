@@ -1,50 +1,65 @@
 
 import React from 'react';
 
+import './styles/About.css';
+
 function About() {
     return (
         <div className='about-container'>
-            <p>
-                Hi, I'm Steven Kight — a software engineer driven by a passion for AI, physics simulations, and solving complex problems with elegant code 
-                (ideally involving a bit of matrix math).
-            </p>
+            <div className='about-text'>
+                <p>
+                    I'm an AI engineer with a research focus that sits outside my day job. During the day I build 
+                    production AI systems — LLM integrations, agent-based workflows, containerized deployments on 
+                    Azure. Outside of that I'm working on a physics simulation engine built in C++, Fortran, and 
+                    CUDA, and an AI routing system that uses face and voice recognition to classify and dispatch tasks.
+                </p>
+                <p>
+                    The work I find most interesting is where the math is hard and the compute constraints are real — 
+                    which is what pulled me toward HPC simulation and why I ended up building things in Fortran and 
+                    CUDA rather than staying in Python.
+                </p>
+                <p>
+                    B.S. Computer Science from UWG with a Certificate in Data Science. Presented AI routing and 
+                    classification research at the Georgia Undergraduate Research Conference. Been building in this 
+                    space since 2020.
+                </p>
 
-            <p>
-                I originally set out as a physics major, drawn to the beauty of physical laws and the creativity of design. 
-                A chance conversation with a professor sparked my shift to computer science, setting me on a path to the University of West Georgia, 
-                where I focused on software development, intelligent systems, and research-driven projects.
-            </p>
+                <hr className='about-divider' />
+                <p className='about-tagline'>
+                    Building at the intersection of high-performance computing and machine learning — where the math matters and the compute constraints are real.
+                </p>
+            </div>
 
-            <p>
-                Since then, I've worked across diverse areas: REST APIs, database design, web development, automation engineering, and — always — artificial intelligence. 
-                Most recently, I've held roles as an AI Engineer and Automation Engineer, building production-ready systems and deploying solutions on 
-                cloud-native infrastructure.
-            </p>
+            <div className='about-highlights'>
+                <div className='highlight-card'>
+                    <h3>Focus Areas</h3>
+                    <ul>
+                        <li>High-Performance Computing</li>
+                        <li>Physics Simulation</li>
+                        <li>ML Systems & LLM Integration</li>
+                        <li>Intelligent Systems</li>
+                    </ul>
+                </div>
 
-            <p>
-                I thrive at the intersection of disciplines, collaborating with teams in English, Physics, and Chemistry to bridge technical rigor with real-world impact. 
-                A few highlights:
-            </p>
-            <ul>
-                <li>
-                    <strong>Campus Smart Assistant: </strong> 
-                    An AI-driven tool using facial and voice recognition to help students manage class schedules, 
-                    presented at the Georgia Undergraduate Research Conference and other venues.
-                </li>
-                <li>
-                    <strong>Physics Research &amp; Application Development: </strong> 
-                    Partnered with faculty to explore and apply complex physics models in software, blending theory and practical implementation.
-                </li>
-            </ul>
+                <div className='highlight-card'>
+                    <h3>Research</h3>
+                    <ul>
+                        <li>Physics Engine — C++, Fortran, CUDA</li>
+                        <li>AI Routing & Classification</li>
+                        <li>GURC Presenter, Nov 2023</li>
+                        <li>Upsilon Pi Epsilon Member</li>
+                    </ul>
+                </div>
 
-            <p>
-                Continuous learning is my driving force — whether it's the latest in machine learning or a new trick in CAD modeling, 
-                I'm probably building it, testing it, or breaking it apart to see how it works.
-            </p>
-
-            <p>
-                If you're passionate about AI, simulation, or think debugging is a personality trait, we'll probably get along.
-            </p>
+                <div className='highlight-card'>
+                    <h3>Currently</h3>
+                    <ul>
+                        <li>AI Engineer @ Aptean</li>
+                        <li>Building in Atlanta, GA</li>
+                        <li>Open to research collaboration</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
