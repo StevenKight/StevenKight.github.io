@@ -5,13 +5,12 @@ import { TypeAnimation } from 'react-type-animation';
 import './styles/Home.css';
 
 const TITLES = [
-    "Software Engineer",
-    "Full-Stack Developer",
-    "Systems Programmer",
-    "DevOps Engineer",
-    "Machine Learning Developer",
-    "AI Researcher",
-    "High-Performance Computing Enthusiast",
+  "AI Researcher",
+  "Physics Simulation Researcher",
+  "Systems Programmer",
+  "ML Systems Engineer",
+  "HPC & Simulation Engineer",
+  "High-Performance Computing Engineer",
 ]
 
 function Home() {
