@@ -1,6 +1,3 @@
-
-import React from 'react';
-
 import './styles/About.css';
 
 function About() {
@@ -8,19 +5,19 @@ function About() {
         <div className='about-container'>
             <div className='about-text'>
                 <p>
-                    I'm an AI engineer with a research focus that sits outside my day job. During the day I build 
-                    production AI systems — LLM integrations, agent-based workflows, containerized deployments on 
-                    Azure. Outside of that I'm working on a physics simulation engine built in C++, Fortran, and 
+                    I'm an AI engineer with a research focus that sits outside my day job. During the day I build
+                    production AI systems — LLM integrations, agent-based workflows, containerized deployments on
+                    Azure. Outside of that I'm working on a physics simulation engine built in C++, Fortran, and
                     CUDA, and an AI routing system that uses face and voice recognition to classify and dispatch tasks.
                 </p>
                 <p>
-                    The work I find most interesting is where the math is hard and the compute constraints are real — 
-                    which is what pulled me toward HPC simulation and why I ended up building things in Fortran and 
+                    The work I find most interesting is where the math is hard and the compute constraints are real —
+                    which is what pulled me toward HPC simulation and why I ended up building things in Fortran and
                     CUDA rather than staying in Python.
                 </p>
                 <p>
-                    B.S. Computer Science from UWG with a Certificate in Data Science. Presented AI routing and 
-                    classification research at the Georgia Undergraduate Research Conference. Been building in this 
+                    B.S. Computer Science from UWG with a Certificate in Data Science. Presented AI routing and
+                    classification research at the Georgia Undergraduate Research Conference. Been building in this
                     space since 2020.
                 </p>
 

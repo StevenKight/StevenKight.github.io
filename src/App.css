@@ -21,7 +21,7 @@
 	transition: all 250ms;
 }
 
-.App .animated-link:hover, 
+.App .animated-link:hover,
 .App .animated-link:focus {
 	color: var(--tran-accent);
 }
@@ -36,7 +36,6 @@
 	background-color: var(--tran-accent);
 	transform: translate3d(-100%, 0, 0);
 	transition: opacity 100ms, transform 250ms;
-	/* filter: drop-shadow(0px 0px 10px var(--tran-accent)); */
 }
 
 .App .animated-link:hover::after,
