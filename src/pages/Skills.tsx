@@ -40,8 +40,8 @@ const SkillsList: Record<string, SkillItem[]> = {
         { img_path: '/assets/images/logos/scikit-learn.svg', title: 'Scikit', ref_link: 'https://scikit-learn.org/' },
         { img_path: '/assets/images/logos/pandas-svgrepo-com.svg', title: 'Pandas', ref_link: 'https://pandas.pydata.org/' },
         { img_path: '/assets/images/logos/django-svgrepo-com.svg', title: 'Django', ref_link: 'https://www.djangoproject.com/' },
-        { img_path: '/assets/images/logos/fastapi-svgrepo-com.svg', title: 'FastAPI', ref_link: 'https://fastapi.tiangolo.com/' },
-        { img_path: '/assets/images/logos/langchain-svgrepo-com.svg', title: 'LangChain', ref_link: 'https://www.langchain.com/' },
+        { img_path: '/assets/images/logos/fastapi.svg', title: 'FastAPI', ref_link: 'https://fastapi.tiangolo.com/' },
+        { img_path: '/assets/images/logos/langchain.svg', title: 'LangChain', ref_link: 'https://www.langchain.com/' },
     ],
 
     'Operating Systems': [
