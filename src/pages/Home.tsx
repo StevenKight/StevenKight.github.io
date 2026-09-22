@@ -19,7 +19,10 @@ function Home() {
                     Hi, I'm <span className="highlight">Steven Kight</span>
                 </h1>
 
+                <p className="visually-hidden">{TITLES.join(', ')}</p>
+
                 <TypeAnimation
+                    aria-hidden="true"
                     sequence={TITLES.flatMap((title) => [title, 2500])}
                     wrapper="span"
                     cursor={true}
