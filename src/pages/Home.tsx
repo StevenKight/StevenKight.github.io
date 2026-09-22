@@ -24,6 +24,7 @@ function Home() {
                     wrapper="span"
                     cursor={true}
                     repeat={Infinity}
+                    preRenderFirstString={true}
                     style={{ fontSize: '2em', display: 'inline-block', fontWeight: 'bold' }}
                 />
 
