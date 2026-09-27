@@ -8,7 +8,7 @@ function Contact() {
             </p>
             <p className="contact-links">
                 Connect with me on{' '}
-                <a href="https://www.linkedin.com/in/steven-kight-742729177/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/steven-g-kight/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </a>{' '}
                 or check out my work on{' '}
