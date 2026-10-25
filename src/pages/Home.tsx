@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import './styles/Home.css';
 
 const TITLES = [
-    'AI Researcher',
+    'AI Engineer',
     'Physics Simulation Researcher',
     'Systems Programmer',
     'ML Systems Engineer',
@@ -32,7 +32,7 @@ function Home() {
                 />
 
                 <p className="description">
-                    I love to build things — from high-performance physics engines to smart assistants and scalable cloud systems.
+                    I build GPU-accelerated simulations and applied ML systems that turn heavy computation into fast, usable tools.
                 </p>
 
                 <div className="buttons">
